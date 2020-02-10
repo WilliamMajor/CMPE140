@@ -22,13 +22,14 @@
 
 module NFactDP(
         input [3:0] number,
-        input loadCnt, loadReg, en, clk, sel, outEn,
-        output [31:0] result,
+        input loadCnt, loadReg, en, clk, sel, outEn, highlow,
+        output [15:0] splitResult,
         output gt, error
     );
     
 wire [3:0] cntOut;
-wire [31:0] muxOut, multOut, regOut;
+wire [31:0] muxOut, multOut, regOut, result;
+
 
 Comparitor ERR (
         .in1        (number),
@@ -69,6 +70,14 @@ Mux_2In MUX2_1 (
         .sel        (outEn),
         .muxOut     (result)
     );
+
+Mux_2In MuxResults (
+        .in1        (result[31:16]),
+        .in2        (result[15:0]),
+        .sel        (highlow),
+        .muxOut     (splitResult)
+    );
+        
 
 Register32  REG32 (
         .regIn      (muxOut),

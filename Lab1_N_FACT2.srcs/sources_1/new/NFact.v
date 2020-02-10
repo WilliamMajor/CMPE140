@@ -22,12 +22,12 @@
 
 module NFact(
     input [3:0] number,
-    input clk, go,
-    output [31:0] result,
+    input clk, go, switch,
+    output [15:0] splitResult,
     output done, error
     );
     
-wire loadCnt, loadReg, en, sel, outEn, gt;
+wire loadCnt, loadReg, en, sel, outEn, gt, highlowSel;
 NFactDP DP (
         .number     (number),
         .loadCnt    (loadCnt),
@@ -36,7 +36,8 @@ NFactDP DP (
         .clk        (clk),
         .sel        (sel),
         .outEn      (outEn),
-        .result     (result),
+        .highlow    (highlowSel),
+        .splitResult(splitResult),
         .gt         (gt),
         .error      (error)
     );
@@ -46,11 +47,13 @@ NFactCU CU (
         .clk        (clk),
         .gt         (gt),
         .error      (error),
+        .highlow    (switch),
         .outEn      (outEn),
         .loadCnt    (loadCnt),
         .loadReg    (loadReg),
         .en         (en),
         .sel        (sel),
+        .highlowSel (highlowSel),
         .done       (done)
     );
 endmodule

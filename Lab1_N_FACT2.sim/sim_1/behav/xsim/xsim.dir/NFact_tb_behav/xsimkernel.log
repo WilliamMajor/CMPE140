@@ -1,7 +1,0 @@
-Running: xsim.dir/NFact_tb_behav/xsimk.exe -simmode gui -wdb NFact_tb_behav.wdb -simrunnum 0 -socket 51477
-Design successfully loaded
-Design Loading Memory Usage: 5192 KB (Peak: 5192 KB)
-Design Loading CPU Usage: 62 ms
-Simulation completed
-Simulation Memory Usage: 5956 KB (Peak: 5956 KB)
-Simulation CPU Usage: 62 ms
