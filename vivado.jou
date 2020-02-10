@@ -11,3 +11,4 @@
 #-----------------------------------------------------------
 start_gui
 open_project {D:/Documents HDD/School/CMPE 140/CMPE140Labs/Lab1_N_FACT2.xpr}
+update_compile_order -fileset sources_1

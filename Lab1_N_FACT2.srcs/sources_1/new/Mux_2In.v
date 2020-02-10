@@ -21,7 +21,7 @@
 
 
 module Mux_2In(
-    input [3:0] in1,
+    input [31:0] in1,
     input [31:0] in2,
     input sel,
     output [31:0]muxOut

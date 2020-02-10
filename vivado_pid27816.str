@@ -87,3 +87,9 @@ Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // [GUI Memory]: 148 MB (+53848kb) [00:00:04]
 // [Engine Memory]: 664 MB (+96512kb) [00:00:04]
 // [Engine Memory]: 731 MB (+35412kb) [00:00:05]
+// Project name: Lab1_N_FACT2; location: D:/Documents HDD/School/CMPE 140/CMPE140Labs; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// HMemoryUtils.trashcanNow. Engine heap size: 739 MB. GUI used memory: 45 MB. Current time: 2/10/20 1:28:46 AM PST
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
