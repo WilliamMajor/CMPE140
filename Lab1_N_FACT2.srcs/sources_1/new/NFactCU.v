@@ -64,7 +64,7 @@ module NFactCU(
     
     always @(posedge clk) cs = ns;
     
-    always @(go, gt, cs, error, highlowSel)
+    always @(go, gt, cs, error, highlowSel, highlow)
     begin
         case(cs)
             START:    begin ns <= (go && !error) ? LOAD : START; $display (error); end

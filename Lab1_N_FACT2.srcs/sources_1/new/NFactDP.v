@@ -52,20 +52,20 @@ Comparitor CMP (
     );
 
 Multiplier MLT (
-        .in1        (cntOut),
+        .in1        ({28'b0, cntOut}),
         .in2        (regOut),
         .multOut    (multOut)
     );
 
 Mux_2In MUX2_0 (
-        .in1        (4'b0001),
+        .in1        (32'd1),
         .in2        (multOut),
         .sel        (sel),
         .muxOut     (muxOut)
     );
     
 Mux_2In MUX2_1 (
-        .in1        (4'b0000),
+        .in1        (32'd0),
         .in2        (regOut),
         .sel        (outEn),
         .muxOut     (result)
