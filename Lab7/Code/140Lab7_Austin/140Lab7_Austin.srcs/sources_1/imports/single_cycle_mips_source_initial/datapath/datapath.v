@@ -25,7 +25,7 @@ module datapath (
     wire imm1, imm2, imm3;
     wire [4:0]  rf_wa;
     wire [4:0] inrf_wa;
-    
+    wire [31:0] jal_sel2_imm;
     wire        pc_src;
     wire [31:0] hi_mux, lo_mux, multmux_out;
     wire [31:0] shift_d;
@@ -180,6 +180,12 @@ module datapath (
             .b              (5'b11111), //register 31 = $ra
             .y              (inrf_wa) //into wa input of regfile
         );
+    mux2 #(32) jal_sel2 (
+            .sel            (jal_sel), //jal_sel should select both jalsel and jal_sel2
+            .a              (32'd0), // $ra is either going to be 0 or pc+4 
+            .b              (pc_plus4), //register 31 = $ra
+            .y              (jal_sel2_imm) //into wa input of regfile
+        );
 
     // --- WB to RF Logic --- //
     mux2 #(32) mult_reg ( //MULTMUX
@@ -197,7 +203,7 @@ module datapath (
     mux2 #(32) mult_rfwd_jal ( //WBMUX2
         .sel            (wbmux2_sel),
         .a              (imm1),
-        .b              (pc_plus4),
+        .b              (jal_sel2_imm),
         .y              (imm2)
         );
     mux2 #(32) mult_rfwd_jal_shifter ( //WBMUX3 
