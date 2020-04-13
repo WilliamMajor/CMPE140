@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Apr 13 13:10:50 2020
+# Process ID: 26052
+# Current directory: D:/Documents/School/CMPE 140/CMPE140Labs/Lab6/Code/Single_Cycle_CPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent33560 D:\Documents\School\CMPE 140\CMPE140Labs\Lab6\Code\Single_Cycle_CPU\Single_Cycle_CPU.xpr
+# Log file: D:/Documents/School/CMPE 140/CMPE140Labs/Lab6/Code/Single_Cycle_CPU/vivado.log
+# Journal file: D:/Documents/School/CMPE 140/CMPE140Labs/Lab6/Code/Single_Cycle_CPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Documents/School/CMPE 140/CMPE140Labs/Lab6/Code/Single_Cycle_CPU/Single_Cycle_CPU.xpr}
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1

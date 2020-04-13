@@ -1,69 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1581342093">
-  <File Type="BITSTR-BMM" Name="NFact_FPGA_bd.bmm"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="NFact_FPGA_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="NFact_FPGA_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR" Name="NFact_FPGA_power_routed.rpt"/>
   <File Type="PA-TCL" Name="NFact_FPGA.tcl"/>
-  <File Type="OPT-TIMING" Name="NFact_FPGA_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="NFact_FPGA_opt.dcp"/>
+  <File Type="BITSTR-BMM" Name="NFact_FPGA_bd.bmm"/>
   <File Type="ROUTE-PWR-SUM" Name="NFact_FPGA_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="NFact_FPGA_reports.tcl"/>
+  <File Type="OPT-DCP" Name="NFact_FPGA_opt.dcp"/>
   <File Type="OPT-DRC" Name="NFact_FPGA_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="NFact_FPGA.hwdef"/>
   <File Type="PWROPT-DCP" Name="NFact_FPGA_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="NFact_FPGA_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="NFact_FPGA_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="NFact_FPGA_placed.dcp"/>
   <File Type="PLACE-IO" Name="NFact_FPGA_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="NFact_FPGA_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="NFact_FPGA_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="NFact_FPGA_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="NFact_FPGA_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="NFact_FPGA_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="NFact_FPGA_incremental_reuse_pre_placed.rpt"/>
   <File Type="BG-BGN" Name="NFact_FPGA.bgn"/>
-  <File Type="PLACE-TIMING" Name="NFact_FPGA_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="NFact_FPGA_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="NFact_FPGA.bin"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="NFact_FPGA_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="NFact_FPGA_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="NFact_FPGA_drc_physopted.rpt"/>
   <File Type="BITSTR-MSK" Name="NFact_FPGA.msk"/>
-  <File Type="PHYSOPT-TIMING" Name="NFact_FPGA_timing_summary_physopted.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="NFact_FPGA_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="NFact_FPGA_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="NFact_FPGA_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="NFact_FPGA_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="NFact_FPGA_drc_routed.pb"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="NFact_FPGA.ltx"/>
   <File Type="ROUTE-DRC-RPX" Name="NFact_FPGA_drc_routed.rpx"/>
-  <File Type="BITSTR-MMI" Name="NFact_FPGA.mmi"/>
+  <File Type="BITSTR-LTX" Name="NFact_FPGA.ltx"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="NFact_FPGA_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="NFact_FPGA.mmi"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="NFact_FPGA_methodology_drc_routed.rpx"/>
-  <File Type="BITSTR-SYSDEF" Name="NFact_FPGA.sysdef"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="NFact_FPGA_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="NFact_FPGA.sysdef"/>
   <File Type="ROUTE-PWR-RPX" Name="NFact_FPGA_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="NFact_FPGA_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="NFact_FPGA_route_status.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="NFact_FPGA_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="NFact_FPGA_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="NFact_FPGA_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="NFact_FPGA_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="NFact_FPGA_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="NFact_FPGA_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="NFact_FPGA_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="NFact_FPGA_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="NFact_FPGA_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="NFact_FPGA_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="NFact_FPGA_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="NFact_FPGA_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="NFact_FPGA_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="NFact_FPGA_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="NFact_FPGA_bus_skew_postroute_physopted.pb"/>
   <File Type="BG-BIT" Name="NFact_FPGA.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="NFact_FPGA_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-RBT" Name="NFact_FPGA.rbt"/>
   <File Type="BITSTR-NKY" Name="NFact_FPGA.nky"/>
   <File Type="BG-DRC" Name="NFact_FPGA.drc"/>

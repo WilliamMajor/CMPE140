@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Apr 13 11:41:51 2020
+# Process ID: 15828
+# Current directory: D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140Lab7_Austin
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23532 D:\Documents\School\CMPE 140\CMPE140Labs\Lab7\Code\140Lab7_Austin\140Lab7_Austin.xpr
+# Log file: D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140Lab7_Austin/vivado.log
+# Journal file: D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140Lab7_Austin\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140Lab7_Austin/140Lab7_Austin.xpr}
+update_compile_order -fileset sources_1
+save_project_as 140_lab7 {D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7} -force
+import_files
+launch_simulation
+source tb_mips_top.tcl
+close_sim

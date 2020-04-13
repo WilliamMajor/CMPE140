@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Mon Feb 10 05:41:33 2020">
+<application name="pa" timeStamp="Sun Apr  5 19:06:09 2020">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="b97eeb7900914cde86c99fe7998b7484" type="ProjectID"/>
 <property name="ProjectIteration" value="14" type="ProjectIteration"/>
@@ -17,7 +17,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
 </item>
 <item name="Java Command Handlers">
-<property name="AddSources" value="2" type="JavaHandler"/>
+<property name="AddSources" value="3" type="JavaHandler"/>
 <property name="AutoConnectTarget" value="4" type="JavaHandler"/>
 <property name="CloseProject" value="1" type="JavaHandler"/>
 <property name="LaunchProgramFpga" value="4" type="JavaHandler"/>
@@ -30,14 +30,15 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ShowView" value="7" type="JavaHandler"/>
 <property name="SimulationRelaunch" value="1" type="JavaHandler"/>
 <property name="SimulationRun" value="3" type="JavaHandler"/>
+<property name="ToolsSettings" value="1" type="JavaHandler"/>
 <property name="ViewTaskRTLAnalysis" value="1" type="JavaHandler"/>
 </item>
 <item name="Gui Handlers">
 <property name="AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS" value="1" type="GuiHandlerData"/>
 <property name="AddSrcWizard_SPECIFY_HDL_NETLIST_BLOCK_DESIGN" value="1" type="GuiHandlerData"/>
 <property name="AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES" value="1" type="GuiHandlerData"/>
-<property name="BaseDialog_CANCEL" value="3" type="GuiHandlerData"/>
-<property name="BaseDialog_OK" value="55" type="GuiHandlerData"/>
+<property name="BaseDialog_CANCEL" value="5" type="GuiHandlerData"/>
+<property name="BaseDialog_OK" value="56" type="GuiHandlerData"/>
 <property name="BaseDialog_YES" value="6" type="GuiHandlerData"/>
 <property name="CmdMsgDialog_OK" value="2" type="GuiHandlerData"/>
 <property name="ConstraintsChooserPanel_ADD_EXISTING_OR_CREATE_NEW_CONSTRAINTS" value="1" type="GuiHandlerData"/>
@@ -45,7 +46,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ConstraintsChooserPanel_FILE_TABLE" value="3" type="GuiHandlerData"/>
 <property name="CreateConstraintsFilePanel_FILE_NAME" value="2" type="GuiHandlerData"/>
 <property name="FileSetPanel_FILE_SET_PANEL_TREE" value="22" type="GuiHandlerData"/>
-<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="32" type="GuiHandlerData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="34" type="GuiHandlerData"/>
 <property name="GraphicalView_ZOOM_OUT" value="21" type="GuiHandlerData"/>
 <property name="HardwareTreePanel_HARDWARE_TREE_TABLE" value="3" type="GuiHandlerData"/>
 <property name="MsgTreePanel_DISCARD_USER_CREATED_MESSAGES" value="3" type="GuiHandlerData"/>
@@ -65,9 +66,15 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="RDIViews_WAVEFORM_VIEWER" value="10" type="GuiHandlerData"/>
 <property name="SaveProjectUtils_CANCEL" value="1" type="GuiHandlerData"/>
 <property name="SaveProjectUtils_SAVE" value="3" type="GuiHandlerData"/>
+<property name="SettingsProjectGeneralPage_CHOOSE_DEVICE_FOR_YOUR_PROJECT" value="2" type="GuiHandlerData"/>
 <property name="SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT" value="2" type="GuiHandlerData"/>
 <property name="TaskBanner_CLOSE" value="9" type="GuiHandlerData"/>
 <property name="WaveformNameTree_WAVEFORM_NAME_TREE" value="2" type="GuiHandlerData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="113" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="75" type="TclMode"/>
 </item>
 </section>
 </application>
