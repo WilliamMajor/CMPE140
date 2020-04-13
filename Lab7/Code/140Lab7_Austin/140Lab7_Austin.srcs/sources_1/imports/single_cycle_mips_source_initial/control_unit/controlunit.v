@@ -2,7 +2,7 @@ module controlunit (
         input  wire [5:0]  opcode,
         input  wire [5:0]  funct,
         output wire        branch,
-        output wire        jump,
+        output wire [1:0]  jump,
         output wire        reg_dst,
         output wire        we_reg,
         output wire        alu_src,

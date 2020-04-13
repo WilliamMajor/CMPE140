@@ -24,10 +24,11 @@ module multu(
         input wire clk,
         input  wire [31:0] in1,
         input  wire [31:0] in2,
-        output wire [31:0] out1,
-        output wire [31:0] out2
+        output reg [31:0] hiout,
+        output reg [31:0] lowout
     );
-
+        always @ (clk, in1, in2)
+        {hiout,lowout} = in1 * in2;
     
     
     

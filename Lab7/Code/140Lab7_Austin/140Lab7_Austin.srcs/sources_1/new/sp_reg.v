@@ -32,7 +32,7 @@ module sp_reg(
     end
     always @ (posedge clk, posedge hi_lo_wen, posedge hi_lo_ren)
     
-    if (hi_lo_wen == 1 && hi_lo_ren == 0) data <= d; 
+    if (hi_lo_wen == 1) data <= d; 
     else if (hi_lo_wen == 0 && hi_lo_ren == 1) 
     q<= data;
 endmodule
