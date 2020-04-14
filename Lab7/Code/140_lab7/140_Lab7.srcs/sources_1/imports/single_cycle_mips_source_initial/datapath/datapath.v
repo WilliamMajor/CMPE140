@@ -21,12 +21,8 @@ module datapath (
         output wire [31:0] wd_dm,
         output wire [31:0] rd3
     );
+    
     wire [31:0] wd_hireg, wd_lowreg;
-    wire imm1, imm2, imm3;
-    wire [4:0]  rf_wa;
-    wire [4:0] inrf_wa;
-    wire [31:0] jal_sel2_imm;
-    wire        pc_src;
     wire [31:0] hi_mux, lo_mux, multmux_out;
     wire [31:0] shift_d;
     wire [31:0] pc_plus4;
@@ -39,7 +35,12 @@ module datapath (
     wire [31:0] alu_pa;
     wire [31:0] alu_pb;
     wire [31:0] wd_rf;
-    wire        zero;
+    wire [31:0] jal_sel2_imm;
+    wire [4:0]  rf_wa;
+    wire [4:0] 	inrf_wa;
+    wire 		imm1, imm2, imm3; 
+    wire 		pc_src;
+    wire 		zero;
     
     assign pc_src = branch & zero;
     assign ba = {sext_imm[29:0], 2'b00};

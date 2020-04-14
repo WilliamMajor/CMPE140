@@ -12,7 +12,7 @@ module mips (
     );
     
     wire       branch;
-    wire       jump;
+    wire [1:0] jump;
     wire       reg_dst;
     wire       we_reg;
     wire       alu_src;
