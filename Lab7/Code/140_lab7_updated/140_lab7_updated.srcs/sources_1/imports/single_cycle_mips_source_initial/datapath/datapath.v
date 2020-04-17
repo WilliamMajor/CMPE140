@@ -22,7 +22,7 @@ module datapath (
         output wire [31:0] rd3
     );
     wire [31:0] wd_hireg, wd_lowreg;
-    wire imm1, imm2, imm3;
+    wire [31:0] imm1, imm2, imm3;
     wire [4:0]  rf_wa;
     wire [4:0] inrf_wa;
     wire [31:0] jal_sel2_imm;
