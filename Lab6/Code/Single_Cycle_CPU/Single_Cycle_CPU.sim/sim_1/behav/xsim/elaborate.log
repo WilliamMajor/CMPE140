@@ -4,25 +4,4 @@ Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 3acf538560
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
-Starting simulation data flow analysis
-WARNING: [XSIM 43-4100] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab6/Single_Cycle_CPU/Single_Cycle_CPU.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.dreg
-Compiling module xil_defaultlib.adder
-Compiling module xil_defaultlib.mux2(WIDTH=32)
-Compiling module xil_defaultlib.mux2(WIDTH=5)
-Compiling module xil_defaultlib.regfile
-Compiling module xil_defaultlib.signext
-Compiling module xil_defaultlib.alu
-Compiling module xil_defaultlib.datapath
-Compiling module xil_defaultlib.maindec
-Compiling module xil_defaultlib.auxdec
-Compiling module xil_defaultlib.controlunit
-Compiling module xil_defaultlib.mips
-Compiling module xil_defaultlib.imem
-Compiling module xil_defaultlib.dmem
-Compiling module xil_defaultlib.mips_top
-Compiling module xil_defaultlib.tb_mips_top
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_mips_top_behav
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

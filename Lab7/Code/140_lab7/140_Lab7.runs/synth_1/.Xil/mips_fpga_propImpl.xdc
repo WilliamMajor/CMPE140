@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:{D:/Documents/School/CMPE 140/CMPE140Labs/Lab6/Single_Cycle_CPU/Single_Cycle_CPU.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc} rfile:../../../Single_Cycle_CPU.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:{D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc} rfile:../../../140_Lab7.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict {PACKAGE_PIN W5 IOSTANDARD LVCMOS33}           [get_ports {clk}];
 set_property src_info {type:XDC file:1 line:6 export:INPUT save:INPUT read:READ} [current_design]

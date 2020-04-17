@@ -2,11 +2,11 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Sun Mar 15 12:07:16 2020
-# Process ID: 12664
-# Current directory: D:/Documents/School/CMPE 140/CMPE140Labs/Lab6/Single_Cycle_CPU/Single_Cycle_CPU.runs/impl_1
+# Start of session at: Tue Apr 14 14:04:03 2020
+# Process ID: 24060
+# Current directory: D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.runs/impl_1
 # Command line: vivado.exe -log mips_fpga.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source mips_fpga.tcl -notrace
-# Log file: D:/Documents/School/CMPE 140/CMPE140Labs/Lab6/Single_Cycle_CPU/Single_Cycle_CPU.runs/impl_1/mips_fpga.vdi
-# Journal file: D:/Documents/School/CMPE 140/CMPE140Labs/Lab6/Single_Cycle_CPU/Single_Cycle_CPU.runs/impl_1\vivado.jou
+# Log file: D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.runs/impl_1/mips_fpga.vdi
+# Journal file: D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source mips_fpga.tcl -notrace

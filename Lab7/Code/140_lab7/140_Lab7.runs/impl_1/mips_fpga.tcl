@@ -60,6 +60,8 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
@@ -69,12 +71,12 @@ set rc [catch {
   create_project -in_memory -part xc7a35tcpg236-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir {D:/Documents/School/CMPE 140/CMPE140Labs/Lab6/Single_Cycle_CPU/Single_Cycle_CPU.cache/wt} [current_project]
-  set_property parent.project_path {D:/Documents/School/CMPE 140/CMPE140Labs/Lab6/Single_Cycle_CPU/Single_Cycle_CPU.xpr} [current_project]
-  set_property ip_output_repo {{D:/Documents/School/CMPE 140/CMPE140Labs/Lab6/Single_Cycle_CPU/Single_Cycle_CPU.cache/ip}} [current_project]
+  set_property webtalk.parent_dir {D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.cache/wt} [current_project]
+  set_property parent.project_path {D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.xpr} [current_project]
+  set_property ip_output_repo {{D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet {{D:/Documents/School/CMPE 140/CMPE140Labs/Lab6/Single_Cycle_CPU/Single_Cycle_CPU.runs/synth_1/mips_fpga.dcp}}
-  read_xdc {{D:/Documents/School/CMPE 140/CMPE140Labs/Lab6/Single_Cycle_CPU/Single_Cycle_CPU.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc}}
+  add_files -quiet {{D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.runs/synth_1/mips_fpga.dcp}}
+  read_xdc {{D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc}}
   link_design -top mips_fpga -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]

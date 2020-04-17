@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="40" Path="D:/Documents/School/CMPE 140/CMPE140Labs/Lab6/Single_Cycle_CPU/Single_Cycle_CPU.xpr">
+<Project Version="7" Minor="40" Path="D:/Documents/School/CMPE 140/CMPE140Labs/Lab6/Code/Single_Cycle_CPU/Single_Cycle_CPU.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="3acf538560c545bdada90d2aaac898a2"/>
@@ -31,7 +31,7 @@
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSAVendor" Val="xilinx"/>
     <Option Name="DSANumComputeUnits" Val="60"/>
-    <Option Name="WTXSimLaunchSim" Val="7"/>
+    <Option Name="WTXSimLaunchSim" Val="17"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -61,7 +61,7 @@
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sources_1/imports/single_cycle_mips_source_initial/datapath/adder.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/datapath/adder.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/datapath/adder.v"/>
           <Attr Name="ImportTime" Val="1583436743"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -70,7 +70,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/single_cycle_mips_source_initial/datapath/alu.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/datapath/alu.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/datapath/alu.v"/>
           <Attr Name="ImportTime" Val="1583436743"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -79,7 +79,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/single_cycle_mips_source_initial/control_unit/auxdec.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/control_unit/auxdec.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/control_unit/auxdec.v"/>
           <Attr Name="ImportTime" Val="1583436743"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -106,7 +106,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/single_cycle_mips_source_initial/control_unit/controlunit.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/control_unit/controlunit.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/control_unit/controlunit.v"/>
           <Attr Name="ImportTime" Val="1583436743"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -115,7 +115,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/single_cycle_mips_source_initial/datapath/datapath.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/datapath/datapath.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/datapath/datapath.v"/>
           <Attr Name="ImportTime" Val="1583436743"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -124,7 +124,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/single_cycle_mips_source_initial/memory/dmem.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/memory/dmem.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/memory/dmem.v"/>
           <Attr Name="ImportTime" Val="1583436743"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -133,7 +133,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/single_cycle_mips_source_initial/datapath/dreg.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/datapath/dreg.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/datapath/dreg.v"/>
           <Attr Name="ImportTime" Val="1583436743"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -151,7 +151,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/memory/imem.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/memory/imem.v"/>
           <Attr Name="ImportTime" Val="1583436743"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -169,7 +169,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/single_cycle_mips_source_initial/control_unit/maindec.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/control_unit/maindec.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/control_unit/maindec.v"/>
           <Attr Name="ImportTime" Val="1583436743"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -178,7 +178,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/single_cycle_mips_source_initial/mips/mips.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/mips/mips.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/mips/mips.v"/>
           <Attr Name="ImportTime" Val="1583436743"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -187,7 +187,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/single_cycle_mips_source_initial/mips/mips_top.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/mips/mips_top.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/mips/mips_top.v"/>
           <Attr Name="ImportTime" Val="1583436743"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -196,7 +196,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/single_cycle_mips_source_initial/datapath/mux2.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/datapath/mux2.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/datapath/mux2.v"/>
           <Attr Name="ImportTime" Val="1583436743"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -205,7 +205,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/single_cycle_mips_source_initial/datapath/regfile.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/datapath/regfile.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/datapath/regfile.v"/>
           <Attr Name="ImportTime" Val="1583436743"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -214,7 +214,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/single_cycle_mips_source_initial/datapath/signext.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/datapath/signext.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/datapath/signext.v"/>
           <Attr Name="ImportTime" Val="1583436743"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -233,7 +233,7 @@
       <File Path="$PSRCDIR/sources_1/imports/single_cycle_mips_source_initial/testbench/tb_mips_top.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/testbench/tb_mips_top.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/testbench/tb_mips_top.v"/>
           <Attr Name="ImportTime" Val="1583436743"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -242,7 +242,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/single_cycle_mips_source_initial/memfile.dat">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/memfile.dat"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/memfile.dat"/>
           <Attr Name="ImportTime" Val="1583436743"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>

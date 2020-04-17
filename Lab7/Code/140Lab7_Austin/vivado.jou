@@ -18,3 +18,4 @@ launch_simulation
 source tb_mips_top.tcl
 relaunch_sim
 synth_design -rtl -name rtl_1
+close_sim
