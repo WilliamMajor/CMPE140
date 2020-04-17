@@ -15,6 +15,7 @@ module mips (
     wire    [1:0]   jump;
     wire    [1:0] hi_lo_ren, hi_lo_wen;
     wire       hi_lo_sel;
+    wire        JR;
     wire       reg_dst;
     wire       we_reg;
     wire       alu_src;
@@ -24,6 +25,7 @@ module mips (
 
     datapath dp (
             .clk            (clk),
+            .JR             (JR),
             .rst            (rst),
             .branch         (branch),
             .jump           (jump),
@@ -65,7 +67,8 @@ module mips (
             .wbmux3_sel     (wbmux3_sel),
             .hi_lo_ren      (hi_lo_ren),
             .hi_lo_wen      (hi_lo_wen),
-            .hi_lo_sel      (hi_lo_sel)
+            .hi_lo_sel      (hi_lo_sel),
+            .JR             (JR)
         );
 
 endmodule

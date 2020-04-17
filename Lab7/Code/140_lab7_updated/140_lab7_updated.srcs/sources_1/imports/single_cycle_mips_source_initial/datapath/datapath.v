@@ -3,7 +3,7 @@ module datapath (
         input  wire        rst,
         input  wire        branch,
         input  wire        left_or_right,
-        input  wire [1:0]  jump,
+        input  wire        jump,
         input  wire        reg_dst,
         input  wire        we_reg,
         input  wire        alu_src,
@@ -12,6 +12,7 @@ module datapath (
         input  wire [1:0]  hi_lo_ren, hi_lo_wen, // added for MULTU, MFLO, MFHI 
         input  wire        hi_lo_sel, //hi_lo register mux selector
         input  wire        wbmux1_sel, wbmux3_sel,
+        input wire         JR,
         input  wire [2:0]  alu_ctrl,
         input  wire [4:0]  ra3,
         input  wire [31:0] instr,
@@ -24,9 +25,11 @@ module datapath (
     wire [31:0] wd_hireg, wd_lowreg;
     wire [31:0] imm1, imm2, imm3;
     wire [4:0]  rf_wa;
-    wire [4:0] inrf_wa;
+    wire [4:0] inrf_wa, jal_selwa_imm;
     wire [31:0] jal_sel2_imm;
+    
     wire        pc_src, wbmux2_sel;
+    wire [31:0] pc_imm;
     wire [31:0] hi_mux, lo_mux, multmux_out;
     wire [31:0] shift_d;
     wire [31:0] pc_plus4;
@@ -71,21 +74,28 @@ module datapath (
             .b              (bta),
             .y              (pc_pre)
         );
-
-//    mux2 #(32) pc_jmp_mux (
-//            .sel            (jump),
-//            .a              (pc_pre), //branch target address or PC+4
-//            .b              (jta), // need to add bigger mux for jump return option
-//            .y              (pc_next)
-//        );
-    jmux #(32) pc_jmp_mux (
-            .sel            (jump),
+    mux2 #(32) pc_JR_mux (
+            .sel            (JR),
             .a              (pc_pre),
-            .b              (jta),
-            .c              (alu_pa),
-            .d              (32'd0),
+            .b              (alu_pa),
+            .y              (pc_imm)
+        );
+
+    mux2 #(32) pc_jmp_mux (
+            .sel            (jump),
+            .a              (pc_imm), //branch target address or PC+4
+            .b              (jta), // need to add bigger mux for jump return option
             .y              (pc_next)
-            );
+        );
+//    jmux #(32) pc_jmp_mux (
+//            .sel            (jump),
+//            .a              (pc_pre),
+//            .b              (jta),
+//            .c              (alu_pa),
+//            .d              (32'd0),
+//            .y              (pc_next)
+//            );
+    
             
 
     // --- RF Logic --- //
@@ -175,11 +185,12 @@ module datapath (
             .y              (wd_rf)
         );
     mux2 #(5) jalsel (
-            .sel            (jal_sel),
+            .sel            (JR),
             .a              (rf_wa), //from regdest MUX
-            .b              (5'b11111), //register 31 = $ra
-            .y              (inrf_wa) //into wa input of regfile
+            .b              (31), //register 31 = $ra
+            .y              (inrf_wa) //into n
         );
+
     mux2 #(32) jal_sel2 (
             .sel            (jal_sel), //jal_sel should select both jalsel and jal_sel2
             .a              (32'd0), // $ra is either going to be 0 or pc+4 

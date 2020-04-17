@@ -30,6 +30,10 @@ module alu (
             begin
             y <= (a < b) ? 1 : 0; //LT COMP
             end
+            3'b011: //JR
+            begin
+            y <= 32'b0;
+            end
         endcase
     end
 
