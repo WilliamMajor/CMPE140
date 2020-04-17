@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Apr 17 00:23:40 2020
+# Process ID: 4716
+# Current directory: C:/GITS/140Labs/CMPE140Labs/Lab7/Code/140_lab7_updated
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9104 C:\GITS\140Labs\CMPE140Labs\Lab7\Code\140_lab7_updated\140_lab7_updated.xpr
+# Log file: C:/GITS/140Labs/CMPE140Labs/Lab7/Code/140_lab7_updated/vivado.log
+# Journal file: C:/GITS/140Labs/CMPE140Labs/Lab7/Code/140_lab7_updated\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/GITS/140Labs/CMPE140Labs/Lab7/Code/140_lab7_updated/140_lab7_updated.xpr
+INFO: [Project 1-313] Project file moved from 'C:/GITS/140Labs/CMPE140Labs/Lab7/Code/140_lab7/140_lab7_updated' since last save.
+WARNING: [Project 1-312] File not found as 'C:/GITS/140Labs/CMPE140Labs/lab7memfile.dat'; using path 'C:/GITS/140Labs/CMPE140Labs/Lab7/lab7memfile.dat' instead.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 17 00:28:50 2020...

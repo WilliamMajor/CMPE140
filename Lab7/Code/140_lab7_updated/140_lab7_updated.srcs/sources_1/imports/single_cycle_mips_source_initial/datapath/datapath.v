@@ -201,7 +201,7 @@ module datapath (
         .y              (imm1)
         );
     mux2 #(32) mult_rfwd_jal ( //WBMUX2
-        .sel            (wbmux2_sel),
+        .sel            (jal_sel),
         .a              (imm1),
         .b              (jal_sel2_imm),
         .y              (imm2)
