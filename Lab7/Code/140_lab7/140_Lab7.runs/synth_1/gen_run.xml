@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1586898209">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1587107631">
   <File Type="PA-TCL" Name="mips_fpga.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="mips_fpga_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="mips_fpga_reports.tcl"/>
@@ -238,10 +238,10 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/Desktop/mips.dat">
+    <File Path="$PSRCDIR/sources_1/imports/Lab7/memfile.dat">
       <FileInfo>
-        <Attr Name="ImportPath" Val="C:/Users/William Major/Desktop/mips.dat"/>
-        <Attr Name="ImportTime" Val="1586895419"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../memfile.dat"/>
+        <Attr Name="ImportTime" Val="1587091702"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>

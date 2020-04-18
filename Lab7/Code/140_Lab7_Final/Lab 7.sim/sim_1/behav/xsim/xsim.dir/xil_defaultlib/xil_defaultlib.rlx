@@ -1,0 +1,13 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/Documents/School/CMPE 140/Test/CMPE_140/Lab 7/Lab 7.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+D:/Documents/School/CMPE 140/Test/CMPE_140/Lab 7/Lab 7.srcs/sources_1/new/Lab_5_Stuff/controlunit.v,1587146752,verilog,,D:/Documents/School/CMPE 140/Test/CMPE_140/Lab 7/Lab 7.srcs/sources_1/new/Lab_5_Stuff/cu_parts.v,,controlunit,,,,,,,,
+D:/Documents/School/CMPE 140/Test/CMPE_140/Lab 7/Lab 7.srcs/sources_1/new/Lab_5_Stuff/cu_parts.v,1587146752,verilog,,D:/Documents/School/CMPE 140/Test/CMPE_140/Lab 7/Lab 7.srcs/sources_1/new/Lab_5_Stuff/datapath.v,,auxdec;maindec,,,,,,,,
+D:/Documents/School/CMPE 140/Test/CMPE_140/Lab 7/Lab 7.srcs/sources_1/new/Lab_5_Stuff/datapath.v,1587146752,verilog,,D:/Documents/School/CMPE 140/Test/CMPE_140/Lab 7/Lab 7.srcs/sources_1/new/Lab_5_Stuff/dp_parts.v,,datapath,,,,,,,,
+D:/Documents/School/CMPE 140/Test/CMPE_140/Lab 7/Lab 7.srcs/sources_1/new/Lab_5_Stuff/dp_parts.v,1587146752,verilog,,D:/Documents/School/CMPE 140/Test/CMPE_140/Lab 7/Lab 7.srcs/sources_1/new/Lab_5_Stuff/mem_parts.v,,adder;alu;dreg;dreg2;mult;mux2;mux4;regfile;signext,,,,,,,,
+D:/Documents/School/CMPE 140/Test/CMPE_140/Lab 7/Lab 7.srcs/sources_1/new/Lab_5_Stuff/mem_parts.v,1587146752,verilog,,D:/Documents/School/CMPE 140/Test/CMPE_140/Lab 7/Lab 7.srcs/sources_1/new/Lab_5_Stuff/mips.v,,dmem;imem,,,,,,,,
+D:/Documents/School/CMPE 140/Test/CMPE_140/Lab 7/Lab 7.srcs/sources_1/new/Lab_5_Stuff/mips.v,1587166351,verilog,,D:/Documents/School/CMPE 140/Test/CMPE_140/Lab 7/Lab 7.srcs/sources_1/new/Lab_5_Stuff/mips_top.v,,mips,,,,,,,,
+D:/Documents/School/CMPE 140/Test/CMPE_140/Lab 7/Lab 7.srcs/sources_1/new/Lab_5_Stuff/mips_top.v,1587166222,verilog,,D:/Documents/School/CMPE 140/Test/CMPE_140/Lab 7/Lab 7.srcs/sources_1/new/Lab_5_Stuff/tb_mips_top.v,,mips_top,,,,,,,,
+D:/Documents/School/CMPE 140/Test/CMPE_140/Lab 7/Lab 7.srcs/sources_1/new/Lab_5_Stuff/tb_mips_top.v,1587168150,verilog,,,,tb_mips_top,,,,,,,,

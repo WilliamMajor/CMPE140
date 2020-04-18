@@ -17,6 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param synth.incrementalSynthesisCache {C:/Users/William Major/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-31236-DESKTOP-HG4VJIQ/incrSyn}
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a35tcpg236-1
@@ -30,7 +31,7 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_output_repo {d:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_mem {{D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/Desktop/mips.dat}}
+read_mem {{D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/Lab7/memfile.dat}}
 read_verilog -library xil_defaultlib {
   {D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/adder.v}
   {D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/alu.v}

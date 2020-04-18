@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Lab 7.srcs/sources_1/new/Lab_5_Stuff/controlunit.v" \
+"../../../../Lab 7.srcs/sources_1/new/Lab_5_Stuff/cu_parts.v" \
+"../../../../Lab 7.srcs/sources_1/new/Lab_5_Stuff/datapath.v" \
+"../../../../Lab 7.srcs/sources_1/new/Lab_5_Stuff/dp_parts.v" \
+"../../../../Lab 7.srcs/sources_1/new/Lab_5_Stuff/mem_parts.v" \
+"../../../../Lab 7.srcs/sources_1/new/Lab_5_Stuff/mips.v" \
+"../../../../Lab 7.srcs/sources_1/new/Lab_5_Stuff/mips_top.v" \
+"../../../../Lab 7.srcs/sources_1/new/Lab_5_Stuff/tb_mips_top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

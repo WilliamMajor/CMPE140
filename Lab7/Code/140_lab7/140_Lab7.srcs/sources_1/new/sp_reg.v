@@ -28,11 +28,15 @@ module sp_reg(
     reg [31:0]data;
     initial
     begin
-    data = 32'h0;
+    	data = 32'h0;
     end
     always @ (posedge clk, posedge hi_lo_wen, posedge hi_lo_ren)
-    
-    if (hi_lo_wen == 1) data <= d; 
-    else if (hi_lo_wen == 0 && hi_lo_ren == 1) 
-    q<= data;
+    begin
+		if (hi_lo_wen == 1)begin
+			data <= d; 
+		end
+		else if (hi_lo_wen == 0 && hi_lo_ren == 1)begin
+			q <= data;		
+	 	end
+	end
 endmodule

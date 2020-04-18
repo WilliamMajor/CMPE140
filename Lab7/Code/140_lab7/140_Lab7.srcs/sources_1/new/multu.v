@@ -28,7 +28,9 @@ module multu(
         output reg [31:0] lowout
     );
         always @ (clk, in1, in2)
-        {hiout,lowout} = in1 * in2;
+        begin
+        	{hiout,lowout} = in1 * in2;
+        end
     
     
     

@@ -1,11 +1,10 @@
 module auxdec (
-        input  wire [1:0] alu_op,
-        input  wire [5:0] funct,
-        output reg       [1:0]hi_lo_ren, //added for multu
-        output reg       [1:0]hi_lo_wen, //added for multu
-        output reg  hi_lo_sel, wbmux1_sel, wbmux3_sel, left_or_right,
-        
-        output wire [2:0] alu_ctrl
+        input  wire [1:0] 	alu_op,
+        input  wire [5:0] 	funct,
+        output reg  [1:0] 	hi_lo_ren, //added for multu
+        output reg 	[1:0] 	hi_lo_wen, //added for multu
+        output reg  		hi_lo_sel, wbmux1_sel, wbmux2_sel, wbmux3_sel, left_or_right,
+        output wire [2:0] 	alu_ctrl
         
     );
 
@@ -24,6 +23,7 @@ module auxdec (
                             hi_lo_wen <= 2'b00;
                             hi_lo_sel <= 0;
                             wbmux1_sel <= 0;
+                            wbmux2_sel <= 0;
                             wbmux3_sel <= 0;
                             left_or_right <= 0;
                             
@@ -35,6 +35,7 @@ module auxdec (
                             hi_lo_wen <= 2'b00;
                             hi_lo_sel <= 0;
                             wbmux1_sel <= 0;
+                            wbmux2_sel <= 0;
                             wbmux3_sel <= 0;
                             left_or_right <= 0;
                 
@@ -46,6 +47,7 @@ module auxdec (
                             hi_lo_wen <= 2'b00;
                             hi_lo_sel <= 0;
                             wbmux1_sel <= 0;
+                            wbmux2_sel <= 0;
                             wbmux3_sel <= 0;
                             left_or_right <= 0;
                 end
@@ -55,6 +57,7 @@ module auxdec (
                             hi_lo_wen <= 2'b00;
                             hi_lo_sel <= 0;
                             wbmux1_sel <= 0;
+                            wbmux2_sel <= 0;
                             wbmux3_sel <= 0;
                             left_or_right <= 0;
                             ctrl <= 3'b011; // MULTU
@@ -66,6 +69,7 @@ module auxdec (
                             ctrl = 3'b110; // SUB
                             hi_lo_sel <= 0;
                             wbmux1_sel <= 0;
+                            wbmux2_sel <= 0;
                             wbmux3_sel <= 0;
                             left_or_right <= 0;
                 end
@@ -76,6 +80,7 @@ module auxdec (
                             ctrl = 3'b111; // SLT
                             hi_lo_sel <= 0;
                             wbmux1_sel <= 0;
+                            wbmux2_sel <= 0;
                             wbmux3_sel <= 0;
                             left_or_right <= 0;
                             
@@ -87,6 +92,7 @@ module auxdec (
                             hi_lo_wen = 2'b10;
                             hi_lo_sel <= 1;
                             wbmux1_sel <= 1;
+                            wbmux2_sel <= 1;
                             wbmux3_sel <= 0;
                             left_or_right <= 0;
                 end
@@ -97,6 +103,7 @@ module auxdec (
                             hi_lo_wen = 2'b01;
                             hi_lo_sel <= 0;
                             wbmux1_sel <= 1;
+                            wbmux2_sel <= 1;
                             wbmux3_sel <= 0;
                             left_or_right <= 0;
                 end
@@ -107,6 +114,7 @@ module auxdec (
                             hi_lo_wen = 2'b00;           
                             hi_lo_sel <= 0;
                             wbmux1_sel <= 0;
+                            wbmux2_sel <= 0;
                             wbmux3_sel <= 1;
                             left_or_right <= 0;           
                                   
@@ -119,6 +127,7 @@ module auxdec (
                             hi_lo_wen = 2'b00;
                             hi_lo_sel <= 0;
                             wbmux1_sel <= 0;
+                            wbmux2_sel <= 0;
                             wbmux3_sel <= 1;
                             left_or_right <= 1;
 
@@ -131,6 +140,7 @@ module auxdec (
                             ctrl = 3'bxxx;
                             hi_lo_sel <= 0;
                             wbmux1_sel <= 0;
+                            wbmux2_sel <= 1;
                             wbmux3_sel <= 0;
                             left_or_right <= 0;
                 end

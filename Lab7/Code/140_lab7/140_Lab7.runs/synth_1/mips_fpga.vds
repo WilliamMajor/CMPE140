@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Tue Apr 14 14:03:31 2020
-# Process ID: 23280
+# Start of session at: Fri Apr 17 00:13:53 2020
+# Process ID: 33028
 # Current directory: D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.runs/synth_1
 # Command line: vivado.exe -log mips_fpga.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mips_fpga.tcl
 # Log file: D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.runs/synth_1/mips_fpga.vds
@@ -16,9 +16,9 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 22364 
+INFO: Helper process launched with PID 45956 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 793.238 ; gain = 177.711
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 793.027 ; gain = 178.266
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'mips_fpga' [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/basys3_single_cycle_mips_validation/mips_fpga.v:1]
 INFO: [Synth 8-6157] synthesizing module 'clk_gen' [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/basys3_single_cycle_mips_validation/clk_gen.v:1]
@@ -56,94 +56,24 @@ INFO: [Synth 8-6155] done synthesizing module 'multu' (10#1) [D:/Documents/Schoo
 INFO: [Synth 8-6157] synthesizing module 'shifter' [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/new/shifter.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'shifter' (11#1) [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/new/shifter.v:23]
 INFO: [Synth 8-6157] synthesizing module 'sp_reg' [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/new/sp_reg.v:23]
-WARNING: [Synth 8-5788] Register data_reg in module sp_reg is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/new/sp_reg.v:35]
-WARNING: [Synth 8-5788] Register q_reg in module sp_reg is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/new/sp_reg.v:37]
+WARNING: [Synth 8-5788] Register data_reg in module sp_reg is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/new/sp_reg.v:36]
+WARNING: [Synth 8-5788] Register q_reg in module sp_reg is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/new/sp_reg.v:39]
 INFO: [Synth 8-6155] done synthesizing module 'sp_reg' (12#1) [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/new/sp_reg.v:23]
 WARNING: [Synth 8-689] width (1) of port connection 'y' does not match port width (32) of module 'mux2' [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/datapath.v:202]
 WARNING: [Synth 8-689] width (1) of port connection 'y' does not match port width (32) of module 'mux2' [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/datapath.v:208]
 WARNING: [Synth 8-689] width (1) of port connection 'y' does not match port width (32) of module 'mux2' [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/datapath.v:214]
 INFO: [Synth 8-6155] done synthesizing module 'datapath' (13#1) [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/datapath.v:1]
-WARNING: [Synth 8-7023] instance 'dp' of module 'datapath' has 24 connections declared, but only 16 given [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/mips/mips.v:22]
+WARNING: [Synth 8-7023] instance 'dp' of module 'datapath' has 24 connections declared, but only 23 given [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/mips/mips.v:29]
 INFO: [Synth 8-6157] synthesizing module 'controlunit' [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/controlunit.v:1]
 INFO: [Synth 8-6157] synthesizing module 'maindec' [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/maindec.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'maindec' (14#1) [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/maindec.v:1]
-WARNING: [Synth 8-7023] instance 'md' of module 'maindec' has 10 connections declared, but only 9 given [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/controlunit.v:16]
 INFO: [Synth 8-6157] synthesizing module 'auxdec' [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/auxdec.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'auxdec' (15#1) [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/auxdec.v:1]
-WARNING: [Synth 8-7023] instance 'ad' of module 'auxdec' has 9 connections declared, but only 3 given [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/controlunit.v:28]
 INFO: [Synth 8-6155] done synthesizing module 'controlunit' (16#1) [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/controlunit.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'mips' (17#1) [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/mips/mips.v:1]
+WARNING: [Synth 8-6104] Input port 'we_dm' has an internal driver [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/mips/mips_top.v:26]
 INFO: [Synth 8-6157] synthesizing module 'imem' [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:1]
-CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'memfile.dat'; please make sure the file is added to project and has read permission, ignoring [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:9]
-
-Warning: Trying to implement RAM in registers. Block RAM or DRAM implementation is not possible for one or more of the following reasons :
-	1: Unable to determine number of words or word size in RAM. 
-	2: No valid read/write found for RAM. 
-RAM dissolved into registers
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
-WARNING: [Synth 8-3848] Net rom in module/entity imem does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:6]
+INFO: [Synth 8-3876] $readmem data file 'memfile.dat' is read successfully [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:9]
 INFO: [Synth 8-6155] done synthesizing module 'imem' (18#1) [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:1]
 INFO: [Synth 8-6157] synthesizing module 'dmem' [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/dmem.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'dmem' (19#1) [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/dmem.v:1]
@@ -154,6 +84,7 @@ INFO: [Synth 8-6155] done synthesizing module 'hex_to_7seg' (21#1) [D:/Documents
 INFO: [Synth 8-6157] synthesizing module 'led_mux' [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/basys3_single_cycle_mips_validation/led_mux.v:1]
 INFO: [Synth 8-226] default block is never used [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/basys3_single_cycle_mips_validation/led_mux.v:20]
 INFO: [Synth 8-6155] done synthesizing module 'led_mux' (22#1) [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/basys3_single_cycle_mips_validation/led_mux.v:1]
+WARNING: [Synth 8-3848] Net we_dm in module/entity mips_fpga does not have driver. [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/basys3_single_cycle_mips_validation/mips_fpga.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'mips_fpga' (23#1) [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/basys3_single_cycle_mips_validation/mips_fpga.v:1]
 WARNING: [Synth 8-3331] design multu has unconnected port clk
 WARNING: [Synth 8-3331] design datapath has unconnected port instr[31]
@@ -163,7 +94,7 @@ WARNING: [Synth 8-3331] design datapath has unconnected port instr[28]
 WARNING: [Synth 8-3331] design datapath has unconnected port instr[27]
 WARNING: [Synth 8-3331] design datapath has unconnected port instr[26]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 857.141 ; gain = 241.613
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 857.586 ; gain = 242.824
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -176,10 +107,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 857.141 ; gain = 241.613
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 859.238 ; gain = 244.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 857.141 ; gain = 241.613
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 859.238 ; gain = 244.477
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -191,44 +122,45 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/mips_fpga_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 968.641 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 989.148 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 968.641 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 989.148 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 968.641 ; gain = 353.113
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 989.148 ; gain = 374.387
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 968.641 ; gain = 353.113
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 989.148 ; gain = 374.387
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 968.641 ; gain = 353.113
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 989.148 ; gain = 374.387
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/new/multu.v:31]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/new/multu.v:32]
 INFO: [Synth 8-5546] ROM "hi_lo_ren" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "hi_lo_wen" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "hi_lo_sel" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "wbmux1_sel" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "wbmux3_sel" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "left_or_right" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rom" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-327] inferring latch for variable 'y_reg' [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/alu.v:9]
-WARNING: [Synth 8-327] inferring latch for variable 'hi_lo_ren_reg' [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/auxdec.v:23]
-WARNING: [Synth 8-327] inferring latch for variable 'hi_lo_wen_reg' [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/auxdec.v:24]
-WARNING: [Synth 8-327] inferring latch for variable 'hi_lo_sel_reg' [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/auxdec.v:25]
-WARNING: [Synth 8-327] inferring latch for variable 'wbmux1_sel_reg' [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/auxdec.v:26]
-WARNING: [Synth 8-327] inferring latch for variable 'wbmux3_sel_reg' [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/auxdec.v:27]
-WARNING: [Synth 8-327] inferring latch for variable 'left_or_right_reg' [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/auxdec.v:28]
-WARNING: [Synth 8-327] inferring latch for variable 'ctrl_reg' [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/auxdec.v:13]
+WARNING: [Synth 8-327] inferring latch for variable 'hi_lo_ren_reg' [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/auxdec.v:22]
+WARNING: [Synth 8-327] inferring latch for variable 'hi_lo_wen_reg' [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/auxdec.v:23]
+WARNING: [Synth 8-327] inferring latch for variable 'hi_lo_sel_reg' [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/auxdec.v:24]
+WARNING: [Synth 8-327] inferring latch for variable 'wbmux1_sel_reg' [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/auxdec.v:25]
+WARNING: [Synth 8-327] inferring latch for variable 'wbmux3_sel_reg' [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/auxdec.v:26]
+WARNING: [Synth 8-327] inferring latch for variable 'left_or_right_reg' [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/auxdec.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'ctrl_reg' [D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/auxdec.v:12]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 968.641 ; gain = 353.113
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 989.148 ; gain = 374.387
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -253,6 +185,7 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 26    
 	   4 Input     32 Bit        Muxes := 1     
+	  23 Input     32 Bit        Muxes := 1     
 	   4 Input     12 Bit        Muxes := 1     
 	   8 Input      8 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 2     
@@ -344,6 +277,10 @@ Detailed RTL Component Info :
 	  13 Input      2 Bit        Muxes := 2     
 	  11 Input      2 Bit        Muxes := 1     
 	  11 Input      1 Bit        Muxes := 4     
+Module imem 
+Detailed RTL Component Info : 
++---Muxes : 
+	  23 Input     32 Bit        Muxes := 1     
 Module led_mux 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -387,73 +324,25 @@ WARNING: [Synth 8-3331] design datapath has unconnected port instr[29]
 WARNING: [Synth 8-3331] design datapath has unconnected port instr[28]
 WARNING: [Synth 8-3331] design datapath has unconnected port instr[27]
 WARNING: [Synth 8-3331] design datapath has unconnected port instr[26]
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_top/mips/dp /\lo/data_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_top/mips/dp /\hi/data_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_top/mips/dp /\lo/q_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_top/mips/dp /\hi/q_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_top/mips/cu/ad/ctrl_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_top/mips/cu/ad/ctrl_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_top/mips/cu/ad/ctrl_reg[2] )
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/alu/y_reg[31]' (LD) to 'mips_top/mips/dp/alu/y_reg[30]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/alu/y_reg[30]' (LD) to 'mips_top/mips/dp/alu/y_reg[28]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/alu/y_reg[28]' (LD) to 'mips_top/mips/dp/alu/y_reg[29]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/alu/y_reg[29]' (LD) to 'mips_top/mips/dp/alu/y_reg[24]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/alu/y_reg[24]' (LD) to 'mips_top/mips/dp/alu/y_reg[25]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/alu/y_reg[25]' (LD) to 'mips_top/mips/dp/alu/y_reg[26]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/alu/y_reg[26]' (LD) to 'mips_top/mips/dp/alu/y_reg[27]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/alu/y_reg[27]' (LD) to 'mips_top/mips/dp/alu/y_reg[18]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/alu/y_reg[18]' (LD) to 'mips_top/mips/dp/alu/y_reg[19]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/alu/y_reg[19]' (LD) to 'mips_top/mips/dp/alu/y_reg[16]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/alu/y_reg[16]' (LD) to 'mips_top/mips/dp/alu/y_reg[17]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/alu/y_reg[17]' (LD) to 'mips_top/mips/dp/alu/y_reg[22]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/alu/y_reg[22]' (LD) to 'mips_top/mips/dp/alu/y_reg[23]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/alu/y_reg[23]' (LD) to 'mips_top/mips/dp/alu/y_reg[20]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/alu/y_reg[20]' (LD) to 'mips_top/mips/dp/alu/y_reg[21]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/alu/y_reg[21]' (LD) to 'mips_top/mips/dp/alu/y_reg[6]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/alu/y_reg[6]' (LD) to 'mips_top/mips/dp/alu/y_reg[7]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/alu/y_reg[7]' (LD) to 'mips_top/mips/dp/alu/y_reg[4]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/alu/y_reg[4]' (LD) to 'mips_top/mips/dp/alu/y_reg[5]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/alu/y_reg[5]' (LD) to 'mips_top/mips/dp/alu/y_reg[1]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/alu/y_reg[1]' (LD) to 'mips_top/mips/dp/alu/y_reg[2]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/alu/y_reg[2]' (LD) to 'mips_top/mips/dp/alu/y_reg[3]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/alu/y_reg[3]' (LD) to 'mips_top/mips/dp/alu/y_reg[14]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/alu/y_reg[14]' (LD) to 'mips_top/mips/dp/alu/y_reg[15]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/alu/y_reg[15]' (LD) to 'mips_top/mips/dp/alu/y_reg[12]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/alu/y_reg[12]' (LD) to 'mips_top/mips/dp/alu/y_reg[13]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/alu/y_reg[13]' (LD) to 'mips_top/mips/dp/alu/y_reg[8]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/alu/y_reg[8]' (LD) to 'mips_top/mips/dp/alu/y_reg[9]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/alu/y_reg[9]' (LD) to 'mips_top/mips/dp/alu/y_reg[10]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/alu/y_reg[10]' (LD) to 'mips_top/mips/dp/alu/y_reg[11]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_top/mips/dp /\pc_reg/q_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_top/mips/dp /\alu/y_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_top/mips/dp /\alu/y_reg[11] )
-WARNING: [Synth 8-3332] Sequential element (alu/y_reg[11]) is unused and will be removed from module datapath.
-WARNING: [Synth 8-3332] Sequential element (alu/y_reg[0]) is unused and will be removed from module datapath.
-WARNING: [Synth 8-3332] Sequential element (mips_top/mips/cu/ad/hi_lo_ren_reg[1]) is unused and will be removed from module mips_fpga.
-WARNING: [Synth 8-3332] Sequential element (mips_top/mips/cu/ad/hi_lo_ren_reg[0]) is unused and will be removed from module mips_fpga.
-WARNING: [Synth 8-3332] Sequential element (mips_top/mips/cu/ad/hi_lo_wen_reg[1]) is unused and will be removed from module mips_fpga.
-WARNING: [Synth 8-3332] Sequential element (mips_top/mips/cu/ad/hi_lo_wen_reg[0]) is unused and will be removed from module mips_fpga.
-WARNING: [Synth 8-3332] Sequential element (mips_top/mips/cu/ad/hi_lo_sel_reg) is unused and will be removed from module mips_fpga.
-WARNING: [Synth 8-3332] Sequential element (mips_top/mips/cu/ad/wbmux1_sel_reg) is unused and will be removed from module mips_fpga.
-WARNING: [Synth 8-3332] Sequential element (mips_top/mips/cu/ad/wbmux3_sel_reg) is unused and will be removed from module mips_fpga.
-WARNING: [Synth 8-3332] Sequential element (mips_top/mips/cu/ad/left_or_right_reg) is unused and will be removed from module mips_fpga.
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/cu/ad/hi_lo_ren_reg[0]' (LD) to 'mips_top/mips/cu/ad/hi_lo_ren_reg[1]'
 WARNING: [Synth 8-3332] Sequential element (mips_top/mips/cu/ad/ctrl_reg[2]) is unused and will be removed from module mips_fpga.
 WARNING: [Synth 8-3332] Sequential element (mips_top/mips/cu/ad/ctrl_reg[1]) is unused and will be removed from module mips_fpga.
 WARNING: [Synth 8-3332] Sequential element (mips_top/mips/cu/ad/ctrl_reg[0]) is unused and will be removed from module mips_fpga.
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_top/mips/dp /\pc_reg/q_reg[0] )
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/cu/ad/hi_lo_wen_reg[1]' (LD) to 'mips_top/mips/cu/ad/hi_lo_sel_reg'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 968.641 ; gain = 353.113
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 989.148 ; gain = 374.387
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Distributed RAM: Preliminary Mapping  Report (see note below)
-+-------------------+------------+-----------+----------------------+---------------+
-|Module Name        | RTL Object | Inference | Size (Depth x Width) | Primitives    | 
-+-------------------+------------+-----------+----------------------+---------------+
-|\mips_top/mips/dp  | rf/rf_reg  | Implied   | 32 x 32              | RAM32M x 18   | 
-+-------------------+------------+-----------+----------------------+---------------+
++------------+----------------------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object                 | Inference | Size (Depth x Width) | Primitives      | 
++------------+----------------------------+-----------+----------------------+-----------------+
+|mips_fpga   | mips_top/mips/dp/rf/rf_reg | Implied   | 32 x 32              | RAM32M x 18     | 
+|mips_fpga   | mips_top/dmem/ram_reg      | Implied   | 64 x 32              | RAM64X1S x 32   | 
++------------+----------------------------+-----------+----------------------+-----------------+
 
 Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
 
@@ -481,24 +370,25 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 968.641 ; gain = 353.113
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1001.281 ; gain = 386.520
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 972.996 ; gain = 357.469
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1021.078 ; gain = 406.316
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Distributed RAM: Final Mapping  Report
-+-------------------+------------+-----------+----------------------+---------------+
-|Module Name        | RTL Object | Inference | Size (Depth x Width) | Primitives    | 
-+-------------------+------------+-----------+----------------------+---------------+
-|\mips_top/mips/dp  | rf/rf_reg  | Implied   | 32 x 32              | RAM32M x 18   | 
-+-------------------+------------+-----------+----------------------+---------------+
++------------+----------------------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object                 | Inference | Size (Depth x Width) | Primitives      | 
++------------+----------------------------+-----------+----------------------+-----------------+
+|mips_fpga   | mips_top/mips/dp/rf/rf_reg | Implied   | 32 x 32              | RAM32M x 18     | 
+|mips_fpga   | mips_top/dmem/ram_reg      | Implied   | 64 x 32              | RAM64X1S x 32   | 
++------------+----------------------------+-----------+----------------------+-----------------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
@@ -512,8 +402,18 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_top/mips/cu/ad/hi_lo_sel_reg )
+WARNING: [Synth 8-3332] Sequential element (mips_top/mips/cu/ad/hi_lo_sel_reg) is unused and will be removed from module mips_fpga.
+WARNING: [Synth 8-3332] Sequential element (mips_top/mips/cu/ad/hi_lo_wen_reg[0]) is unused and will be removed from module mips_fpga.
+WARNING: [Synth 8-3332] Sequential element (mips_top/mips/dp/hi/data_reg[0]_P) is unused and will be removed from module mips_fpga.
+WARNING: [Synth 8-3332] Sequential element (mips_top/mips/dp/lo/data_reg[0]_LDC) is unused and will be removed from module mips_fpga.
+WARNING: [Synth 8-3332] Sequential element (mips_top/mips/dp/lo/data_reg[0]_C) is unused and will be removed from module mips_fpga.
+WARNING: [Synth 8-3332] Sequential element (mips_top/mips/dp/lo/data_reg[0]_P) is unused and will be removed from module mips_fpga.
+WARNING: [Synth 8-3332] Sequential element (mips_top/mips/dp/lo/q_reg[0]_LDC) is unused and will be removed from module mips_fpga.
+WARNING: [Synth 8-3332] Sequential element (mips_top/mips/dp/lo/q_reg[0]_C) is unused and will be removed from module mips_fpga.
+WARNING: [Synth 8-3332] Sequential element (mips_top/mips/dp/lo/q_reg[0]_P) is unused and will be removed from module mips_fpga.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 972.996 ; gain = 357.469
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1038.227 ; gain = 423.465
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -537,7 +437,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 980.543 ; gain = 365.016
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1053.043 ; gain = 438.281
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -550,7 +450,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 980.543 ; gain = 365.016
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1053.043 ; gain = 438.281
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -562,25 +462,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 980.543 ; gain = 365.016
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1053.043 ; gain = 438.281
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 980.543 ; gain = 365.016
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1053.043 ; gain = 438.281
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 980.543 ; gain = 365.016
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1053.043 ; gain = 438.281
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 980.543 ; gain = 365.016
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1053.043 ; gain = 438.281
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -593,63 +493,76 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+-------+------+
-|      |Cell   |Count |
-+------+-------+------+
-|1     |BUFG   |     2|
-|2     |CARRY4 |    16|
-|3     |LUT1   |     2|
-|4     |LUT2   |     5|
-|5     |LUT3   |    15|
-|6     |LUT4   |    18|
-|7     |LUT5   |    53|
-|8     |LUT6   |    21|
-|9     |MUXF7  |     7|
-|10    |RAM32M |     6|
-|11    |FDCE   |    30|
-|12    |FDRE   |    68|
-|13    |IBUF   |    12|
-|14    |OBUF   |    13|
-+------+-------+------+
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     3|
+|2     |CARRY4   |    44|
+|3     |LUT1     |     2|
+|4     |LUT2     |     8|
+|5     |LUT3     |    14|
+|6     |LUT4     |    55|
+|7     |LUT5     |   134|
+|8     |LUT6     |   272|
+|9     |MUXF7    |    22|
+|10    |RAM32M   |    18|
+|11    |RAM64X1S |     1|
+|12    |FDCE     |    33|
+|13    |FDPE     |     1|
+|14    |FDRE     |    69|
+|15    |LD       |    36|
+|16    |LDC      |     1|
+|17    |IBUF     |    12|
+|18    |OBUF     |    13|
++------+---------+------+
 
 Report Instance Areas: 
-+------+------------------+-----------------+------+
-|      |Instance          |Module           |Cells |
-+------+------------------+-----------------+------+
-|1     |top               |                 |   268|
-|2     |  bd              |button_debouncer |    20|
-|3     |  clk_gen         |clk_gen          |    56|
-|4     |  led_mux         |led_mux          |    29|
-|5     |  mips_top        |mips_top         |    84|
-|6     |    mips          |mips             |    84|
-|7     |      dp          |datapath         |    84|
-|8     |        pc_plus_4 |adder            |     9|
-|9     |        pc_reg    |dreg             |    74|
-|10    |        rf        |regfile          |     1|
-+------+------------------+-----------------+------+
++------+-------------------+-----------------+------+
+|      |Instance           |Module           |Cells |
++------+-------------------+-----------------+------+
+|1     |top                |                 |   738|
+|2     |  bd               |button_debouncer |    20|
+|3     |  clk_gen          |clk_gen          |    56|
+|4     |  led_mux          |led_mux          |    29|
+|5     |  mips_top         |mips_top         |   571|
+|6     |    dmem           |dmem             |     1|
+|7     |    mips           |mips             |   570|
+|8     |      cu           |controlunit      |     6|
+|9     |        ad         |auxdec           |     6|
+|10    |      dp           |datapath         |   564|
+|11    |        alu        |alu              |    66|
+|12    |        hi         |sp_reg           |     5|
+|13    |        pc_plus_4  |adder            |     8|
+|14    |        pc_plus_br |adder_0          |     8|
+|15    |        pc_reg     |dreg             |   429|
+|16    |        rf         |regfile          |    48|
++------+-------------------+-----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 980.543 ; gain = 365.016
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1053.043 ; gain = 438.281
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 28 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 980.543 ; gain = 253.516
-Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 980.543 ; gain = 365.016
+Synthesis finished with 0 errors, 0 critical warnings and 27 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 1053.043 ; gain = 308.371
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1053.043 ; gain = 438.281
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 29 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 122 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 996.613 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1069.121 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 6 instances were transformed.
-  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+  A total of 56 instances were transformed.
+  LD => LDCE: 36 instances
+  LDC => LDCE: 1 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 18 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-111 Infos, 107 Warnings, 1 Critical Warnings and 0 Errors encountered.
+75 Infos, 42 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 996.613 ; gain = 642.629
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 996.613 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1069.121 ; gain = 714.145
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1069.121 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_lab7/140_Lab7.runs/synth_1/mips_fpga.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file mips_fpga_utilization_synth.rpt -pb mips_fpga_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Apr 14 14:03:56 2020...
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 17 00:14:24 2020...
