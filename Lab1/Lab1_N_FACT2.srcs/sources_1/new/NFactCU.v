@@ -67,7 +67,7 @@ module NFactCU(
     always @(go, gt, cs, error, highlowSel, highlow)
     begin
         case(cs)
-            START:    begin ns <= (go && !error) ? LOAD : START; $display (error); end
+            START:    begin ns <= (go && !error) ? LOAD: START; end
             LOAD:     ns <= WAIT;
             WAIT:     begin if(gt) ns <= MULT;
                       else if(highlow) ns <= DONEH;

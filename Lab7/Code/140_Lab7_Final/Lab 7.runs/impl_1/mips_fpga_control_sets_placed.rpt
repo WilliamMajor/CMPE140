@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Fri Apr 17 16:39:20 2020
+| Date         : Wed Apr 22 16:38:44 2020
 | Host         : DESKTOP-HG4VJIQ running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file mips_fpga_control_sets_placed.rpt
 | Design       : mips_fpga
@@ -58,11 +58,11 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              35 |           16 |
+| No           | No                    | No                     |              35 |           18 |
 | No           | No                    | Yes                    |              32 |           23 |
 | No           | Yes                   | No                     |              33 |           10 |
 | Yes          | No                    | No                     |               0 |            0 |
-| Yes          | No                    | Yes                    |              63 |           18 |
+| Yes          | No                    | Yes                    |              63 |           19 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -70,16 +70,16 @@ Table of Contents
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------+---------------------------+------------------+------------------+----------------+
-|  Clock Signal  |       Enable Signal       | Set/Reset Signal | Slice Load Count | Bel Load Count |
-+----------------+---------------------------+------------------+------------------+----------------+
-|  clk_IBUF_BUFG |                           |                  |               11 |             16 |
-|  clk_gen/CLK   |                           |                  |                5 |             19 |
-|  clk_pb_BUFG   |                           | rst_IBUF         |               23 |             32 |
-|  clk_pb_BUFG   | mips/dp/pc_reg/we_dm_OBUF |                  |                8 |             32 |
-|  clk_IBUF_BUFG |                           | rst_IBUF         |               10 |             33 |
-|  clk_pb_BUFG   | mips/dp/pc_reg/E[0]       | rst_IBUF         |               18 |             63 |
-|  clk_pb_BUFG   | mips/dp/pc_reg/we         |                  |               18 |            144 |
-+----------------+---------------------------+------------------+------------------+----------------+
++----------------+------------------------------------+------------------+------------------+----------------+
+|  Clock Signal  |            Enable Signal           | Set/Reset Signal | Slice Load Count | Bel Load Count |
++----------------+------------------------------------+------------------+------------------+----------------+
+|  clk_IBUF_BUFG |                                    |                  |               12 |             16 |
+|  clk_gen/CLK   |                                    |                  |                6 |             19 |
+|  clk_pb_BUFG   |                                    | rst_IBUF         |               23 |             32 |
+|  clk_pb_BUFG   | mips_top/mips/dp/pc_reg/we_dm_OBUF |                  |                8 |             32 |
+|  clk_IBUF_BUFG |                                    | rst_IBUF         |               10 |             33 |
+|  clk_pb_BUFG   | mips_top/mips/dp/pc_reg/E[0]       | rst_IBUF         |               19 |             63 |
+|  clk_pb_BUFG   | mips_top/mips/dp/pc_reg/we         |                  |               18 |            144 |
++----------------+------------------------------------+------------------+------------------+----------------+
 
 

@@ -20,8 +20,8 @@ jr $ra # return
 else:
 addi $a0, $a0, -1 # n = n - 1
 jal factorial # recursive call
-lw $ra, 0($sp) # restore $ra
 lw $a0, 4($sp) # restore $a0
+lw $ra, 0($sp) # restore $ra
 addi $sp, $sp, 8 # restore $sp
 multu $a0, $v0 # n * factorial(n-1)
 mflo $v0 # mv result into $v0

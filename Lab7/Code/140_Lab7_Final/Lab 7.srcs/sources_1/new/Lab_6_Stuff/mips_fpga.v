@@ -24,13 +24,18 @@ module mips_fpga
 		.button             (button),
 		.debounced_button   (clk_pb)
 	);
-    mips        mips    (clk_pb, rst, switches[4:0], instr, rd_dm, we_dm, pc_current, alu_out, wd_dm, dispData);
-	/*
-	switchs[4:0] are used as the 3rd read address (ra3) of the RF,
-	dispData is the register contents from the RF's 3rd read port (rd3).
-	*/
-    imem        imem    (pc_current[7:2], instr);
-    dmem        dmem    (clk_pb, we_dm, alu_out[7:2], wd_dm, rd_dm);
+	mips_top mips_top (
+		.clk				(clk_pb),
+		.rst				(rst),
+		.ra3				(switches[4:0]),
+		.instr				(instr),
+		.we_dm				(we_dm),
+		.rd_dm				(rd_dm),
+		.pc_current			(pc_current),
+		.alu_out			(alu_out),
+		.wd_dm				(wd_dm),
+		.rd3				(dispData)	
+	);
     
     hex_to_7seg hex3 (
             .HEX                (reg_hex[15:12]),

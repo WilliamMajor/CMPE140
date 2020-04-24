@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Apr  5 19:03:11 2020
+# Process ID: 22648
+# Current directory: D:/Documents/School/CMPE 140/CMPE140Labs/Lab1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15772 D:\Documents\School\CMPE 140\CMPE140Labs\Lab1\Lab1_N_FACT2.xpr
+# Log file: D:/Documents/School/CMPE 140/CMPE140Labs/Lab1/vivado.log
+# Journal file: D:/Documents/School/CMPE 140/CMPE140Labs/Lab1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Documents/School/CMPE 140/CMPE140Labs/Lab1/Lab1_N_FACT2.xpr}
+update_compile_order -fileset sources_1

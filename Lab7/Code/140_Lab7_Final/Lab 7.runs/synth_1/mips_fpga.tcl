@@ -24,21 +24,22 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir {D:/Documents/School/CMPE 140/Test/CMPE_140/Lab 7/Lab 7.cache/wt} [current_project]
-set_property parent.project_path {D:/Documents/School/CMPE 140/Test/CMPE_140/Lab 7/Lab 7.xpr} [current_project]
+set_property webtalk.parent_dir {D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_Lab7_Final/Lab 7.cache/wt} [current_project]
+set_property parent.project_path {D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_Lab7_Final/Lab 7.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_cache_permissions disable [current_project]
-read_mem {{D:/Documents/School/CMPE 140/Test/CMPE_140/Lab 7/Lab 7.srcs/sources_1/imports/Lab7/memfile.dat}}
+read_mem {{D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_Lab7_Final/Lab 7.srcs/sources_1/imports/Lab7/memfile.dat}}
 read_verilog -library xil_defaultlib {
-  {D:/Documents/School/CMPE 140/Test/CMPE_140/Lab 7/Lab 7.srcs/sources_1/new/Lab_5_Stuff/controlunit.v}
-  {D:/Documents/School/CMPE 140/Test/CMPE_140/Lab 7/Lab 7.srcs/sources_1/new/Lab_5_Stuff/cu_parts.v}
-  {D:/Documents/School/CMPE 140/Test/CMPE_140/Lab 7/Lab 7.srcs/sources_1/new/Lab_5_Stuff/datapath.v}
-  {D:/Documents/School/CMPE 140/Test/CMPE_140/Lab 7/Lab 7.srcs/sources_1/new/Lab_5_Stuff/dp_parts.v}
-  {D:/Documents/School/CMPE 140/Test/CMPE_140/Lab 7/Lab 7.srcs/sources_1/new/Lab_5_Stuff/mem_parts.v}
-  {D:/Documents/School/CMPE 140/Test/CMPE_140/Lab 7/Lab 7.srcs/sources_1/new/Lab_5_Stuff/mips.v}
-  {D:/Documents/School/CMPE 140/Test/CMPE_140/Lab 7/Lab 7.srcs/sources_1/new/Lab_6_Stuff/utility.v}
-  {D:/Documents/School/CMPE 140/Test/CMPE_140/Lab 7/Lab 7.srcs/sources_1/new/Lab_6_Stuff/mips_fpga.v}
+  {D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_Lab7_Final/Lab 7.srcs/sources_1/new/Lab_5_Stuff/controlunit.v}
+  {D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_Lab7_Final/Lab 7.srcs/sources_1/new/Lab_5_Stuff/cu_parts.v}
+  {D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_Lab7_Final/Lab 7.srcs/sources_1/new/Lab_5_Stuff/datapath.v}
+  {D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_Lab7_Final/Lab 7.srcs/sources_1/new/Lab_5_Stuff/dp_parts.v}
+  {D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_Lab7_Final/Lab 7.srcs/sources_1/new/Lab_5_Stuff/mem_parts.v}
+  {D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_Lab7_Final/Lab 7.srcs/sources_1/new/Lab_5_Stuff/mips.v}
+  {D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_Lab7_Final/Lab 7.srcs/sources_1/new/Lab_5_Stuff/mips_top.v}
+  {D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_Lab7_Final/Lab 7.srcs/sources_1/new/Lab_6_Stuff/utility.v}
+  {D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_Lab7_Final/Lab 7.srcs/sources_1/new/Lab_6_Stuff/mips_fpga.v}
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

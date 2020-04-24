@@ -70,10 +70,10 @@ set rc [catch {
   create_project -in_memory -part xc7a35tcpg236-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir {D:/Documents/School/CMPE 140/Test/CMPE_140/Lab 7/Lab 7.cache/wt} [current_project]
-  set_property parent.project_path {D:/Documents/School/CMPE 140/Test/CMPE_140/Lab 7/Lab 7.xpr} [current_project]
+  set_property webtalk.parent_dir {D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_Lab7_Final/Lab 7.cache/wt} [current_project]
+  set_property parent.project_path {D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_Lab7_Final/Lab 7.xpr} [current_project]
   set_property ip_cache_permissions disable [current_project]
-  add_files -quiet {{D:/Documents/School/CMPE 140/Test/CMPE_140/Lab 7/Lab 7.runs/synth_1/mips_fpga.dcp}}
+  add_files -quiet {{D:/Documents/School/CMPE 140/CMPE140Labs/Lab7/Code/140_Lab7_Final/Lab 7.runs/synth_1/mips_fpga.dcp}}
   read_xdc {{D:/Documents/School/CMPE 140/Test/CMPE_140/Lab 6/Lab 6.srcs/sources_1/new/Lab_6_Stuff/mips_fpga.xdc}}
   link_design -top mips_fpga -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb

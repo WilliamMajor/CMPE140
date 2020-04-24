@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date             : Fri Apr 17 16:39:38 2020
+| Date             : Wed Apr 22 16:39:02 2020
 | Host             : DESKTOP-HG4VJIQ running 64-bit major release  (build 9200)
 | Command          : report_power -file mips_fpga_power_routed.rpt -pb mips_fpga_power_summary_routed.pb -rpx mips_fpga_power_routed.rpx
 | Design           : mips_fpga
@@ -52,7 +52,7 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |    <0.001 |        3 |       --- |             --- |
+| Clocks                   |     0.001 |        3 |       --- |             --- |
 | Slice Logic              |    <0.001 |     1044 |       --- |             --- |
 |   LUT as Logic           |    <0.001 |      585 |     20800 |            2.81 |
 |   Register               |    <0.001 |      163 |     41600 |            0.39 |
@@ -61,7 +61,7 @@ Table of Contents
 |   Others                 |     0.000 |       19 |       --- |             --- |
 |   BUFG                   |     0.000 |        1 |        32 |            3.13 |
 |   LUT as Distributed RAM |     0.000 |      104 |      9600 |            1.08 |
-| Signals                  |    <0.001 |     1082 |       --- |             --- |
+| Signals                  |    <0.001 |     1083 |       --- |             --- |
 | DSPs                     |     0.000 |        4 |        90 |            4.44 |
 | I/O                      |     0.020 |       25 |       106 |           23.58 |
 | Static Power             |     0.072 |          |           |                 |
