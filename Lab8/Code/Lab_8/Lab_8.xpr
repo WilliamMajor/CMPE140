@@ -113,18 +113,17 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/Lab_5_Stuff/mips_top.v">
+      <File Path="$PSRCDIR/sources_1/new/pipe_reg_parts.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../Lab7/Code/140_Lab7_Final/Lab 7.srcs/sources_1/new/Lab_5_Stuff/mips_top.v"/>
-          <Attr Name="ImportTime" Val="1587596127"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/pipe_reg_parts.v">
+      <File Path="$PSRCDIR/sources_1/imports/Lab_5_Stuff/mips_top.v">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../Lab7/Code/140_Lab7_Final/Lab 7.srcs/sources_1/new/Lab_5_Stuff/mips_top.v"/>
+          <Attr Name="ImportTime" Val="1587596127"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
