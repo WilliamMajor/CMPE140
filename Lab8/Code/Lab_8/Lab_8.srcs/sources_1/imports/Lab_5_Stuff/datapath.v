@@ -16,7 +16,7 @@ module datapath(
 		input wire [31:0] instr,
 		input wire [31:0] rd_dm,
 		output wire zero,
-		output wire we_dmE,
+		output wire we_dmE_out,
 		output wire [31:0] pc_current,
 		output wire [31:0] alu_outM_out,
 		output wire [31:0] wd_dmM_out,
@@ -34,8 +34,12 @@ module datapath(
     
     wire [4:0]	rf_waM_out, rf_waW_out;
     
-    wire		alu_ctrlE_out, alu_srcE_out, dm2regE_out, mult_enE_out, reg_dstE_out;
-    wire		dm2regM_out, mult_enM_out, we_dmE_out, dm2regW_out;
+    wire [2:0] alu_ctrlE_out;
+    
+    wire [1:0] reg_dstE_out;
+    
+    wire		alu_srcE_out, dm2regE_out, mult_enE_out, pc_srcE_out;
+    wire		dm2regM_out, mult_enM_out, dm2regW_out, pc_srcM_out;
     
     assign ba = {seE_out[29:0], 2'b00};
     assign jta = {pc_plus4[31:28], instr[25:0], 2'b00};
@@ -61,7 +65,7 @@ module datapath(
 	);
 	
     mux2 #(32) pc_src_mux (
-    	.sel	(pc_src),
+    	.sel	(pc_srcM_out),
     	.a		(pc_plus4),
     	.b		(bta),
     	.y		(pc_pre)
@@ -83,6 +87,7 @@ module datapath(
     // --- Pipeline Logic -- //
     pipe_reg_D pipe_reg_D (
     	.clk			(clk),
+    	.rst			(rst),
     	.instrD_in		(instr),
     	.pc_plus4D_in	(pc_plus4),
     	.instrD_out		(instrD_out),
@@ -91,11 +96,13 @@ module datapath(
 	
 	pipe_reg_E pipe_reg_E (
 		.clk			(clk),
+		.rst			(rst),
 		.alu_ctrlE_in	(alu_ctrl),
 		.alu_srcE_in	(alu_src),
 		.dm2regE_in		(dm2reg),
 		.mult_enE_in	(mult_en),
 		.we_dmE_in		(we_dm),
+		.pc_srcE_in		(pc_src),
 		.reg_dstE_in	(reg_dst),
 		.pc_plus4E_in	(pc_plus4D_out),
 		.alu_paE_in		(wd_dm),
@@ -106,6 +113,7 @@ module datapath(
 		.dm2regE_out	(dm2regE_out),
 		.mult_enE_out	(mult_enE_out),
 		.we_dmE_out		(we_dmE_out),
+		.pc_srcE_out	(pc_srcE_out),
 		.reg_dstE_out	(reg_dstE_out),
 		.pc_plus4E_out	(pc_plus4E_out),
 		.alu_paE_out	(alu_paE_out),
@@ -115,23 +123,28 @@ module datapath(
 	
 	pipe_reg_M	pipe_reg_M (
 		.clk				(clk),
+		.rst				(rst),
 		.multM_in			(mult_out),
 		.alu_outM_in		(alu_out),
 		.wd_dmM_in			(wd_dm),
+		.pc_plus_brM_in		(bta),
 		.rf_waM_in			(rf_wa),
 		.dm2regM_in			(dm2regE_out),
 		.mult_enM_in		(mult_enE_out),
+		.pc_srcM_in			(pc_srcE_out),
 		.multM_out			(multM_out),
 		.alu_outM_out		(alu_outM_out),
 		.wd_dmM_out			(wd_dmM_out),
 		.pc_plus_brM_out	(pc_plus_brM_out),
 		.rf_waM_out			(rf_waM_out),
 		.dm2regM_out		(dm2regM_out),
-		.mult_enM_out		(mult_enM_out)
+		.mult_enM_out		(mult_enM_out),
+		.pc_srcM_out		(pc_srcM_out)
 	);
     
     pipe_reg_W pipe_reg_W (
     	.clk			(clk),
+    	.rst			(rst),
     	.alu_outW_in	(alu_outM_out),
     	.rd_dmW_in		(rd_dm),
     	.mult_loW_in	(lo_out),
@@ -161,7 +174,7 @@ module datapath(
     	.ra1	(instrD_out[25:21]),
     	.ra2	(instrD_out[20:16]),
     	.ra3	(ra3),
-    	.wa		(rf_wa),
+    	.wa		(rf_waW_out),
     	.wd		(mult_mux_out),
     	.rd1	(alu_pa),
     	.rd2	(wd_dm),
@@ -224,8 +237,8 @@ module datapath(
     	.sel	(mult_sel),
     	.a		(pc_plus4D_out),
     	.b		(wd_rf),
-    	.c		(lo_out),
-    	.d		(hi_out),
+    	.c		(mult_loW_out),
+    	.d		(mult_hiW_out),
     	.y		(mult_mux_out)
 	);
     
