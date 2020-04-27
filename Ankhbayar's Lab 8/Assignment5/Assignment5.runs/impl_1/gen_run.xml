@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1587968418">
+  <File Type="BITSTR-BMM" Name="FPGA_top_level_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="FPGA_top_level_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="FPGA_top_level_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="FPGA_top_level_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="FPGA_top_level.tcl"/>
+  <File Type="OPT-TIMING" Name="FPGA_top_level_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="FPGA_top_level_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="FPGA_top_level_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="FPGA_top_level_reports.tcl"/>
+  <File Type="OPT-DRC" Name="FPGA_top_level_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="FPGA_top_level.hwdef"/>
+  <File Type="PWROPT-DCP" Name="FPGA_top_level_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="FPGA_top_level_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="FPGA_top_level_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="FPGA_top_level_placed.dcp"/>
+  <File Type="PLACE-IO" Name="FPGA_top_level_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="FPGA_top_level_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="FPGA_top_level_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="FPGA_top_level_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="FPGA_top_level_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="FPGA_top_level_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="FPGA_top_level_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="FPGA_top_level.bgn"/>
+  <File Type="PLACE-TIMING" Name="FPGA_top_level_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="FPGA_top_level_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="FPGA_top_level.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="FPGA_top_level_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="FPGA_top_level_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="FPGA_top_level_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="FPGA_top_level.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="FPGA_top_level_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="FPGA_top_level_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="FPGA_top_level_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="FPGA_top_level_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="FPGA_top_level_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="FPGA_top_level_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="FPGA_top_level.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="FPGA_top_level_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="FPGA_top_level.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="FPGA_top_level_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="FPGA_top_level_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="FPGA_top_level.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="FPGA_top_level_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="FPGA_top_level_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="FPGA_top_level_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="FPGA_top_level_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="FPGA_top_level_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="FPGA_top_level_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="FPGA_top_level_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="FPGA_top_level_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="FPGA_top_level_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="FPGA_top_level_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="FPGA_top_level_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="FPGA_top_level_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="FPGA_top_level_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="FPGA_top_level_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="FPGA_top_level_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="FPGA_top_level_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="FPGA_top_level_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="FPGA_top_level_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="FPGA_top_level_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="FPGA_top_level.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="FPGA_top_level_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="FPGA_top_level.rbt"/>
+  <File Type="BITSTR-NKY" Name="FPGA_top_level.nky"/>
+  <File Type="BG-DRC" Name="FPGA_top_level.drc"/>
+  <File Type="RDI-RDI" Name="FPGA_top_level.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/SoC_reg.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/SoC_top.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ad.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Desktop/lab5_processor_design_1/single_cycle_mips_source_initial/datapath/adder.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Desktop/lab5_processor_design_1/single_cycle_mips_source_initial/datapath/alu.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Desktop/lab5_processor_design_1/single_cycle_mips_source_initial/control_unit/auxdec.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Desktop/basys3_single_cycle_mips_validation/button_debouncer.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Desktop/factorial/check_error.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Desktop/basys3_single_cycle_mips_validation/clk_gen.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Desktop/factorial/cmp.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Desktop/factorial/cnt.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Desktop/lab5_processor_design_1/single_cycle_mips_source_initial/control_unit/controlunit.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Desktop/lab5_processor_design_1/single_cycle_mips_source_initial/datapath/datapath.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Desktop/lab5_processor_design_1/single_cycle_mips_source_initial/memory/dmem.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Desktop/lab5_processor_design_1/single_cycle_mips_source_initial/datapath/dreg.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/fact_ad.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Desktop/factorial/fact_cu.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Desktop/factorial/fact_datapath.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/fact_top.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Desktop/factorial/factorial.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/gpio_ad.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/gpio_top.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Desktop/basys3_single_cycle_mips_validation/hex_to_7seg.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Desktop/lab5_processor_design_1/single_cycle_mips_source_initial/memory/imem.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Desktop/basys3_single_cycle_mips_validation/led_mux.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Desktop/lab5_processor_design_1/single_cycle_mips_source_initial/control_unit/maindec.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Desktop/lab5_processor_design_1/single_cycle_mips_source_initial/mips/mips.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Desktop/factorial/mul.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/multiply.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Desktop/factorial/mux1to2.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Desktop/lab5_processor_design_1/single_cycle_mips_source_initial/datapath/mux2.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Desktop/factorial/mux2to1.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/mux4to1.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Desktop/lab5_processor_design_1/single_cycle_mips_source_initial/datapath/regfile.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Desktop/factorial/register.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Desktop/lab5_processor_design_1/single_cycle_mips_source_initial/datapath/signext.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/FPGA_top_level.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Desktop/basys3_single_cycle_mips_validation/mips_fpga.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Desktop/lab5_processor_design_1/single_cycle_mips_source_initial/mips/mips_top.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Desktop/lab5_processor_design_1/single_cycle_mips_source_initial/testbench/tb_mips_top.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Desktop/CMPE 140/memfile.dat">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Desktop/CMPE 140/lab8.dat">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="FPGA_top_level"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../Desktop/basys3_single_cycle_mips_validation/mips_fpga.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

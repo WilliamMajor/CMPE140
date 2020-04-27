@@ -1,0 +1,100 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Sun Apr 26 23:21:48 2020
+| Host         : DESKTOP-GLJU2J0 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file FPGA_top_level_control_sets_placed.rpt
+| Design       : FPGA_top_level
+| Device       : xc7a35t
+-------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    22 |
+|    Minimum number of control sets                        |    22 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    90 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    22 |
+| >= 0 to < 4        |    10 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    10 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              43 |           20 |
+| No           | No                    | Yes                    |              10 |            6 |
+| No           | Yes                   | No                     |              42 |           15 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |             100 |           32 |
+| Yes          | Yes                   | No                     |              35 |           11 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------------------------+-------------------------------------------+-------------------------------------------+------------------+----------------+
+|                    Clock Signal                   |               Enable Signal               |              Set/Reset Signal             | Slice Load Count | Bel Load Count |
++---------------------------------------------------+-------------------------------------------+-------------------------------------------+------------------+----------------+
+|  SoC/ad/RdSel_reg[1]/G0                           |                                           |                                           |                1 |              1 |
+|  clk_pb_BUFG                                      |                                           |                                           |                1 |              1 |
+|  SoC/mips/dp/pc_reg/WE1_reg_i_5_0                 |                                           | SoC/mips/dp/pc_reg/AR[1]                  |                1 |              1 |
+|  SoC/fact/fact/cu_1/sel2_reg_i_1_n_0              |                                           |                                           |                1 |              1 |
+|  SoC/fact/fact/cu_1/EN_reg_i_1_n_0                |                                           |                                           |                1 |              1 |
+|  SoC/fact/fact/cu_1/DONE_reg_i_1_n_0              |                                           |                                           |                1 |              1 |
+|  SoC/fact/fact/cu_1/sel1_reg_i_1_n_0              |                                           |                                           |                1 |              1 |
+|  SoC/fact/fact/cu_1/Load_reg_reg_i_1_n_0          |                                           |                                           |                1 |              1 |
+|  SoC/fact/fact/cu_1/Load_cnt_reg_i_1_n_0          |                                           |                                           |                1 |              1 |
+|  SoC/mips/dp/pc_reg/rf_reg_r1_0_31_6_11_i_15_0[0] |                                           | SoC/mips/dp/pc_reg/AR[0]                  |                1 |              2 |
+|  clk_pb_BUFG                                      | SoC/mips/dp/pc_reg/WE1_reg[0]             | rst_IBUF                                  |                1 |              4 |
+|  clk_pb_BUFG                                      | SoC/fact/fact/cu_1/FSM_onehot_CS_reg[1]_1 | rst_IBUF                                  |                1 |              4 |
+|  clk_pb_BUFG                                      |                                           | rst_IBUF                                  |                9 |             16 |
+|  clk_IBUF_BUFG                                    |                                           |                                           |                7 |             16 |
+|  clk_gen/clk_5KHz_reg_0                           |                                           |                                           |                5 |             19 |
+|  clk_pb_BUFG                                      | SoC/fact/fact/cu_1/Load_reg               | SoC/fact/fact/cu_1/FSM_onehot_CS_reg[2]_0 |               10 |             31 |
+|  clk_pb_BUFG                                      | SoC/mips/dp/pc_reg/we_dm                  |                                           |                8 |             32 |
+|  clk_pb_BUFG                                      | SoC/mips/dp/pc_reg/WE2_reg_0[0]           | rst_IBUF                                  |               14 |             32 |
+|  clk_pb_BUFG                                      | SoC/mips/dp/pc_reg/WE2_reg[0]             | rst_IBUF                                  |               10 |             32 |
+|  clk_pb_BUFG                                      | SoC/fact/fact/cu_1/E[0]                   | rst_IBUF                                  |                7 |             32 |
+|  clk_IBUF_BUFG                                    |                                           | rst_IBUF                                  |               10 |             33 |
+|  clk_pb_BUFG                                      | SoC/mips/dp/pc_reg/we                     |                                           |               12 |             96 |
++---------------------------------------------------+-------------------------------------------+-------------------------------------------+------------------+----------------+
+
+
