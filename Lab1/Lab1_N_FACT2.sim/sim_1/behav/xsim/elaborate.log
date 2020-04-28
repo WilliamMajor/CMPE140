@@ -1,13 +1,12 @@
-Vivado Simulator 2018.2
-Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 1521cc0dd17e4815996a671037038617 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot NFact_tb_behav xil_defaultlib.NFact_tb xil_defaultlib.glbl -log elaborate.log 
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 1521cc0dd17e4815996a671037038617 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot NFact_tb_behav xil_defaultlib.NFact_tb xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-WARNING: [VRFC 10-278] actual bit length 4 differs from formal bit length 32 for port in1 [D:/Documents HDD/School/CMPE 140/CMPE140Labs/Lab1_N_FACT2.srcs/sources_1/new/NFactDP.v:61]
-WARNING: [VRFC 10-278] actual bit length 4 differs from formal bit length 32 for port in1 [D:/Documents HDD/School/CMPE 140/CMPE140Labs/Lab1_N_FACT2.srcs/sources_1/new/NFactDP.v:68]
-WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 32 for port in1 [D:/Documents HDD/School/CMPE 140/CMPE140Labs/Lab1_N_FACT2.srcs/sources_1/new/NFactDP.v:75]
-WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 32 for port in2 [D:/Documents HDD/School/CMPE 140/CMPE140Labs/Lab1_N_FACT2.srcs/sources_1/new/NFactDP.v:76]
-WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 32 for port muxOut [D:/Documents HDD/School/CMPE 140/CMPE140Labs/Lab1_N_FACT2.srcs/sources_1/new/NFactDP.v:78]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'in1' [D:/Documents/School/CMPE 140/CMPE140Labs/Lab1/Lab1_N_FACT2.srcs/sources_1/new/NFactDP.v:55]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 32 for port 'in1' [D:/Documents/School/CMPE 140/CMPE140Labs/Lab1/Lab1_N_FACT2.srcs/sources_1/new/NFactDP.v:75]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 32 for port 'in2' [D:/Documents/School/CMPE 140/CMPE140Labs/Lab1/Lab1_N_FACT2.srcs/sources_1/new/NFactDP.v:76]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 32 for port 'muxOut' [D:/Documents/School/CMPE 140/CMPE140Labs/Lab1/Lab1_N_FACT2.srcs/sources_1/new/NFactDP.v:78]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis

@@ -1,14 +1,17 @@
 #-----------------------------------------------------------
-# Webtalk v2018.2 (64-bit)
-# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
-# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Sun Feb  9 18:35:38 2020
-# Process ID: 6812
-# Current directory: D:/Documents HDD/School/CMPE 140/Labs/Lab1_N_FACT2/Lab1_N_FACT2.sim/sim_1/behav/xsim
-# Command line: wbtcv.exe -mode batch -source D:/Documents HDD/School/CMPE 140/Labs/Lab1_N_FACT2/Lab1_N_FACT2.sim/sim_1/behav/xsim/xsim.dir/NFact_tb_behav/webtalk/xsim_webtalk.tcl -notrace
-# Log file: D:/Documents HDD/School/CMPE 140/Labs/Lab1_N_FACT2/Lab1_N_FACT2.sim/sim_1/behav/xsim/webtalk.log
-# Journal file: D:/Documents HDD/School/CMPE 140/Labs/Lab1_N_FACT2/Lab1_N_FACT2.sim/sim_1/behav/xsim\webtalk.jou
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Apr 27 11:11:57 2020
+# Process ID: 70760
+# Current directory: D:/Documents/School/CMPE 140/CMPE140Labs/Lab1/Lab1_N_FACT2.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source D:/Documents/School/CMPE 140/CMPE140Labs/Lab1/Lab1_N_FACT2.sim/sim_1/behav/xsim/xsim.dir/NFact_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/Documents/School/CMPE 140/CMPE140Labs/Lab1/Lab1_N_FACT2.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: D:/Documents/School/CMPE 140/CMPE140Labs/Lab1/Lab1_N_FACT2.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
-source D:/Documents -notrace
-couldn't read file "D:/Documents": permission denied
-INFO: [Common 17-206] Exiting Webtalk at Sun Feb  9 18:35:38 2020...
+source D:/Documents/School/CMPE -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "D:/Documents/School/CMPE" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Mon Apr 27 11:11:57 2020...

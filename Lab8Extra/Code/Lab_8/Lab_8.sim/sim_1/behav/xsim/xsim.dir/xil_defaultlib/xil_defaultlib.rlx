@@ -1,0 +1,15 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.srcs/sim_1/imports/Lab_5_Stuff/tb_mips_top.v,1587969389,verilog,,,,tb_mips_top,,,,,,,,
+D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/controlunit.v,1587595401,verilog,,D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/cu_parts.v,,controlunit,,,,,,,,
+D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/cu_parts.v,1587595130,verilog,,D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/datapath.v,,auxdec;maindec,,,,,,,,
+D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/datapath.v,1588097625,verilog,,D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/dp_parts.v,,datapath,,,,,,,,
+D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/dp_parts.v,1588095572,verilog,,D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/mem_parts.v,,adder;alu;dreg;dreg2;mult;mux2;mux4;regfile;signext,,,,,,,,
+D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/mem_parts.v,1588019101,verilog,,D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/mips.v,,dmem;imem,,,,,,,,
+D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/mips.v,1587931937,verilog,,D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/mips_top.v,,mips,,,,,,,,
+D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/mips_top.v,1587931983,verilog,,D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.srcs/sources_1/new/pipe_reg_parts.v,,mips_top,,,,,,,,
+D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.srcs/sources_1/new/pipe_reg_parts.v,1588097597,verilog,,D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.srcs/sources_1/new/pipeline_control.v,,pipe_reg_D;pipe_reg_E;pipe_reg_M;pipe_reg_W,,,,,,,,
+D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.srcs/sources_1/new/pipeline_control.v,1588099444,verilog,,D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.srcs/sim_1/imports/Lab_5_Stuff/tb_mips_top.v,,pipeline_control,,,,,,,,

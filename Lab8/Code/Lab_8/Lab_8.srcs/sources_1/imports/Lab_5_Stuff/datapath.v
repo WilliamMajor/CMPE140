@@ -38,8 +38,10 @@ module datapath(
     
     wire [1:0] reg_dstE_out;
     
-    wire		alu_srcE_out, dm2regE_out, mult_enE_out, pc_srcE_out;
-    wire		dm2regM_out, mult_enM_out, dm2regW_out, pc_srcM_out;
+    wire		alu_srcE_out, dm2regE_out, mult_enE_out, pc_srcE_out, we_regE_out;
+    wire		dm2regM_out, mult_enM_out, dm2regW_out, pc_srcM_out, we_regM_out;
+    wire		we_regW_out;
+    
     
     assign ba = {seE_out[29:0], 2'b00};
     assign jta = {pc_plus4[31:28], instr[25:0], 2'b00};
@@ -103,6 +105,7 @@ module datapath(
 		.mult_enE_in	(mult_en),
 		.we_dmE_in		(we_dm),
 		.pc_srcE_in		(pc_src),
+		.we_regE_in		(we_reg),
 		.reg_dstE_in	(reg_dst),
 		.pc_plus4E_in	(pc_plus4D_out),
 		.alu_paE_in		(wd_dm),
@@ -114,6 +117,7 @@ module datapath(
 		.mult_enE_out	(mult_enE_out),
 		.we_dmE_out		(we_dmE_out),
 		.pc_srcE_out	(pc_srcE_out),
+		.we_regE_out	(we_regE_out),
 		.reg_dstE_out	(reg_dstE_out),
 		.pc_plus4E_out	(pc_plus4E_out),
 		.alu_paE_out	(alu_paE_out),
@@ -132,6 +136,7 @@ module datapath(
 		.dm2regM_in			(dm2regE_out),
 		.mult_enM_in		(mult_enE_out),
 		.pc_srcM_in			(pc_srcE_out),
+		.we_regM_in			(we_regE_out),
 		.multM_out			(multM_out),
 		.alu_outM_out		(alu_outM_out),
 		.wd_dmM_out			(wd_dmM_out),
@@ -139,7 +144,8 @@ module datapath(
 		.rf_waM_out			(rf_waM_out),
 		.dm2regM_out		(dm2regM_out),
 		.mult_enM_out		(mult_enM_out),
-		.pc_srcM_out		(pc_srcM_out)
+		.pc_srcM_out		(pc_srcM_out),
+		.we_regM_out		(we_regM_out)
 	);
     
     pipe_reg_W pipe_reg_W (
@@ -151,12 +157,14 @@ module datapath(
     	.mult_hiW_in	(hi_out),
     	.rf_waW_in		(rf_waM_out),
     	.dm2regW_in		(dm2regM_out),
+    	.we_regW_in		(we_regM_out),
     	.alu_outW_out	(alu_outW_out),
     	.rd_dmW_out		(rd_dmW_out),
     	.mult_loW_out	(mult_loW_out),
     	.mult_hiW_out	(mult_hiW_out),
     	.rf_waW_out		(rf_waW_out),
-    	.dm2regW_out	(dm2regW_out)
+    	.dm2regW_out	(dm2regW_out),
+    	.we_regW_out	(we_regW_out)
     );
     // --- RF Logic --- //
     mux4 #(5) rf_wa_mux (
@@ -170,7 +178,7 @@ module datapath(
 	
     regfile rf (
     	.clk	(clk),
-    	.we		(we_reg),
+    	.we		(we_regW_out),
     	.ra1	(instrD_out[25:21]),
     	.ra2	(instrD_out[20:16]),
     	.ra3	(ra3),

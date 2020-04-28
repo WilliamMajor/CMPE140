@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1581342093">
+  <File Type="BITSTR-BMM" Name="NFact_FPGA_bd.bmm"/>
   <File Type="ROUTE-PWR" Name="NFact_FPGA_power_routed.rpt"/>
   <File Type="PA-TCL" Name="NFact_FPGA.tcl"/>
-  <File Type="BITSTR-BMM" Name="NFact_FPGA_bd.bmm"/>
+  <File Type="OPT-DCP" Name="NFact_FPGA_opt.dcp"/>
   <File Type="ROUTE-PWR-SUM" Name="NFact_FPGA_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="NFact_FPGA_reports.tcl"/>
-  <File Type="OPT-DCP" Name="NFact_FPGA_opt.dcp"/>
   <File Type="OPT-DRC" Name="NFact_FPGA_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="NFact_FPGA.hwdef"/>
   <File Type="PWROPT-DCP" Name="NFact_FPGA_pwropt.dcp"/>
@@ -25,19 +25,20 @@
   <File Type="ROUTE-BLACKBOX-DCP" Name="NFact_FPGA_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="NFact_FPGA_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="NFact_FPGA_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="NFact_FPGA_drc_routed.rpx"/>
   <File Type="BITSTR-LTX" Name="NFact_FPGA.ltx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="NFact_FPGA_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="NFact_FPGA_drc_routed.rpx"/>
   <File Type="BITSTR-MMI" Name="NFact_FPGA.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="NFact_FPGA_methodology_drc_routed.rpt"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="NFact_FPGA_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="NFact_FPGA_methodology_drc_routed.pb"/>
   <File Type="BITSTR-SYSDEF" Name="NFact_FPGA.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="NFact_FPGA_methodology_drc_routed.pb"/>
   <File Type="ROUTE-PWR-RPX" Name="NFact_FPGA_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="NFact_FPGA_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="NFact_FPGA_route_status.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="NFact_FPGA_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="NFact_FPGA_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="NFact_FPGA_timing_summary_routed.rpx"/>
+  <File Type="RDI-RDI" Name="NFact_FPGA.vdi"/>
   <File Type="ROUTE-CLK" Name="NFact_FPGA_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="NFact_FPGA_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="NFact_FPGA_bus_skew_routed.pb"/>
@@ -48,7 +49,6 @@
   <File Type="BITSTR-RBT" Name="NFact_FPGA.rbt"/>
   <File Type="BITSTR-NKY" Name="NFact_FPGA.nky"/>
   <File Type="BG-DRC" Name="NFact_FPGA.drc"/>
-  <File Type="RDI-RDI" Name="NFact_FPGA.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>

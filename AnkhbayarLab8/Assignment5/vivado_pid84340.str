@@ -1,0 +1,204 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 84340
+License: Customer
+
+Current time: 	Sun Apr 26 23:49:27 PDT 2020
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 3440x1440
+Screen resolution (DPI): 100
+Available screens: 1
+Available disk space: 83 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	William Major
+User home directory: C:/Users/William Major
+User working directory: D:/Documents/School/CMPE 140/CMPE140Labs/Ankhbayar's Lab 8/Assignment5
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2019.1
+RDI_DATADIR: C:/Xilinx/Vivado/2019.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2019.1/bin
+
+Vivado preferences file location: C:/Users/William Major/AppData/Roaming/Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: C:/Users/William Major/AppData/Roaming/Xilinx/Vivado/2019.1/
+Vivado layouts directory: C:/Users/William Major/AppData/Roaming/Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	D:/Documents/School/CMPE 140/CMPE140Labs/Ankhbayar's Lab 8/Assignment5/vivado.log
+Vivado journal file location: 	D:/Documents/School/CMPE 140/CMPE140Labs/Ankhbayar's Lab 8/Assignment5/vivado.jou
+Engine tmp dir: 	D:/Documents/School/CMPE 140/CMPE140Labs/Ankhbayar's Lab 8/Assignment5/.Xil/Vivado-84340-DESKTOP-HG4VJIQ
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2019.1
+XILINX_SDK: C:/Xilinx/SDK/2019.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2019.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2019.1
+
+
+GUI allocated memory:	187 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 738 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// HOptionPane Error: 'Can't open project 'Assignment5'. Please verify that the project still exists. (Open Project)'
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+selectButton(PAResourceEtoH.GettingStartedView_CREATE_NEW_PROJECT, "Create Project"); // x (w, cl)
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+// [GUI Memory]: 118 MB (+121290kb) [00:00:06]
+// [Engine Memory]: 648 MB (+528370kb) [00:00:06]
+// [Engine Memory]: 728 MB (+49744kb) [00:00:07]
+// [GUI Memory]: 124 MB (+102kb) [00:00:08]
+// f (cl): New Project: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 744 MB. GUI used memory: 60 MB. Current time: 4/26/20, 11:49:27 PM PDT
+selectButton("NEXT", "Next >"); // JButton (j, f)
+setText(PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, "test", true); // Y (Q, f)
+selectButton("NEXT", "Next >"); // JButton (j, f)
+selectButton("NEXT", "Next >"); // JButton (j, f)
+selectButton("NEXT", "Next >"); // JButton (j, f)
+// by (f):  Create Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: create_project test {D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/test} -part xc7vx485tffg1157-1 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 805 MB (+42640kb) [00:00:21]
+// WARNING: HEventQueue.dispatchEvent() is taking  1383 ms.
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 837 MB. GUI used memory: 65 MB. Current time: 4/26/20, 11:49:42 PM PDT
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+selectButton("FINISH", "Finish"); // JButton (j, f)
+// 'g' command handler elapsed time: 17 seconds
+dismissDialog("Create Project"); // by (f)
+dismissDialog("New Project"); // f (cl)
+// Elapsed time: 25 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (O, cl)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// D (cl): Settings: addNotify
+// [Engine Memory]: 861 MB (+16430kb) [00:00:49]
+// WARNING: HEventQueue.dispatchEvent() is taking  1115 ms.
+selectButton(PAResourceQtoS.SettingsProjectGeneralPage_CHOOSE_DEVICE_FOR_YOUR_PROJECT, (String) null); // q (a, D)
+// [GUI Memory]: 134 MB (+3530kb) [00:00:51]
+// c (D): Select Device: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 891 MB. GUI used memory: 65 MB. Current time: 4/26/20, 11:50:12 PM PDT
+setText("PAResourceEtoH.FPGAChooser_FPGA_TABLE_SEARCH_FIELD", (String) null); // OverlayTextField (P, c)
+// Elapsed time: 26 seconds
+setText("PAResourceEtoH.FPGAChooser_FPGA_TABLE_SEARCH_FIELD", "xc7a35tcpg236-1"); // OverlayTextField (P, c)
+selectTable(PAResourceEtoH.FPGAChooser_FPGA_TABLE, "xc7a35tcpg236-1 ; 236 ; 106 ; 20800 ; 41600 ; 50 ; 0 ; 90 ; 2 ; 2 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 1 ; 5 ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 0, "xc7a35tcpg236-1", 0); // w (O, c)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (c)
+dismissDialog("Select Device"); // c (D)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (D)
+// [GUI Memory]: 141 MB (+939kb) [00:01:26]
+// by (cl):  Change Settings : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: set_property part xc7a35tcpg236-1 [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PART_MODIFIED
+dismissDialog("Change Settings"); // by (cl)
+dismissDialog("Settings"); // D (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ae (cl)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cl): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_DIRECTORIES, "Add Directories"); // a (E, c)
+// HOptionPane Error: 'Please use ASCII characters for directory name or path. (Non-ASCII Characters Found)'
+// Elapsed time: 28 seconds
+selectButton("OptionPane.button", "OK"); // JButton (A, H)
+// HOptionPane Error: 'Please use ASCII characters for directory name or path. (Non-ASCII Characters Found)'
+selectButton("OptionPane.button", "OK"); // JButton (A, H)
+dismissFolderChooser();
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (E, c)
+// HOptionPane Error: 'Please use ASCII characters for file name or path. (Non-ASCII Characters Found)'
+// Elapsed time: 61 seconds
+selectButton("OptionPane.button", "OK"); // JButton (A, H)
+// HOptionPane Error: 'Please use ASCII characters for file name or path. (Non-ASCII Characters Found)'
+selectButton("OptionPane.button", "OK"); // JButton (A, H)
+dismissFileChooser();
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (E, c)
+dismissFileChooser();
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (E, c)
+// HOptionPane Error: 'Please use ASCII characters for file name or path. (Non-ASCII Characters Found)'
+// Elapsed time: 30 seconds
+selectButton("OptionPane.button", "OK"); // JButton (A, H)
+dismissFileChooser();
+selectButton("CANCEL", "Cancel"); // JButton (j, c)
+// 'h' command handler elapsed time: 170 seconds
+dismissDialog("Add Sources"); // c (cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cl): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (E, c)
+// Elapsed time: 22 seconds
+setFileChooser("D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.srcs/sources_1/new/pipeline_control.v");
+selectButton("BACK", "< Back"); // JButton (j, c)
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 1 ; pipeline_control.v ; xil_defaultlib ; D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.srcs/sources_1/new", 0, "1", 1); // bQ (O, c)
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // B (f, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // B (f, c)
+selectMenuItem(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files..."); // ah (an, c)
+dismissFileChooser();
+// Elapsed time: 18 seconds
+selectButton("CANCEL", "Cancel"); // JButton (j, c)
+// 'h' command handler elapsed time: 61 seconds
+dismissDialog("Add Sources"); // c (cl)
+// Elapsed time: 10 seconds
+closeMainWindow("test - [D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/test/test.xpr] - Vivado 2019.1"); // cl
+// A (cl): Exit Vivado: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (A)
+dismissDialog("Exit Vivado"); // A (cl)

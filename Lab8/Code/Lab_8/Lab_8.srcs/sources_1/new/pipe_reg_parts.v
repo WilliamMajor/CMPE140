@@ -36,6 +36,7 @@ module pipe_reg_E(
 		input wire			mult_enE_in,
 		input wire			we_dmE_in,
 		input wire			pc_srcE_in,
+		input wire			we_regE_in,
 		input wire [1:0]	reg_dstE_in,
 		input wire [31:0]	pc_plus4E_in,
 		input wire [31:0]	alu_paE_in,
@@ -47,13 +48,14 @@ module pipe_reg_E(
 		output wire			mult_enE_out,
 		output wire			we_dmE_out,
 		output wire			pc_srcE_out,
+		output wire			we_regE_out,
 		output wire	[1:0]	reg_dstE_out,
 		output wire [31:0]	pc_plus4E_out,
 		output wire [31:0]	alu_paE_out,
 		output wire [31:0] 	instrE_out,
 		output wire [31:0]	seE_out
 	);
-	reg 		alu_srcE, dm2regE, mult_enE, we_dmE, pc_srcE;
+	reg 		alu_srcE, dm2regE, mult_enE, we_dmE, pc_srcE, we_regE;
 	reg [1:0]	reg_dstE;
 	reg	[2:0]	alu_ctrlE;
 	reg [31:0]	pc_plus4E, alu_paE, instrE, seE;
@@ -67,6 +69,7 @@ module pipe_reg_E(
 			mult_enE 	<=	0;
 			we_dmE		<=	0;
 			pc_srcE		<= 	0;
+			we_regE		<=	0;
 			reg_dstE 	<=	0;
 			pc_plus4E 	<=	0;
 			alu_paE 	<=	0;
@@ -81,6 +84,7 @@ module pipe_reg_E(
 			mult_enE 	<=	mult_enE_in;
 			we_dmE		<=	we_dmE_in;
 			pc_srcE		<= 	pc_srcE_in;
+			we_regE		<= 	we_regE_in;
 			reg_dstE 	<=	reg_dstE_in;
 			pc_plus4E 	<=	pc_plus4E_in;
 			alu_paE 	<=	alu_paE_in;
@@ -95,6 +99,7 @@ module pipe_reg_E(
 	assign mult_enE_out 	= mult_enE;
 	assign we_dmE_out 		= we_dmE;
 	assign pc_srcE_out		= pc_srcE;
+	assign we_regE_out		= we_regE;
 	assign reg_dstE_out 	= reg_dstE;
 	assign pc_plus4E_out 	= pc_plus4E;
 	assign alu_paE_out 		= alu_paE;
@@ -114,6 +119,7 @@ module pipe_reg_M(
 		input wire			dm2regM_in,
 		input wire			mult_enM_in,
 		input wire			pc_srcM_in,
+		input wire			we_regM_in,
 		output wire [63:0]	multM_out,
 		output wire [31:0]	alu_outM_out,
 		output wire [31:0]	wd_dmM_out,
@@ -121,12 +127,13 @@ module pipe_reg_M(
 		output wire [4:0]	rf_waM_out,
 		output wire			dm2regM_out,
 		output wire			mult_enM_out,
-		output wire			pc_srcM_out
+		output wire			pc_srcM_out,
+		output wire			we_regM_out
 	);
 	reg [63:0] 	multM;
 	reg [31:0] 	alu_outM, wd_dmM, pc_plus_brM;
 	reg [4:0]	rf_waM;
-	reg	dm2regM, mult_enM, pc_srcM;
+	reg	dm2regM, mult_enM, pc_srcM, we_regM;
 	always @ (posedge clk, posedge rst)
 	begin
 		if(rst == 1)
@@ -137,6 +144,7 @@ module pipe_reg_M(
 			dm2regM 	<=	0;
 			mult_enM 	<=	0;
 			pc_srcM		<= 	0;
+			we_regM		<=	0;
 			rf_waM 		<=	0;
 			multM 		<=	0;
 			pc_plus_brM <=	0;
@@ -149,6 +157,7 @@ module pipe_reg_M(
 			dm2regM 	<=	dm2regM_in;
 			mult_enM 	<=	mult_enM_in;
 			pc_srcM		<= 	pc_srcM_in;
+			we_regM		<=	we_regM_in;
 			rf_waM 		<=	rf_waM_in;
 			multM 		<=	multM_in;
 			pc_plus_brM <=	pc_plus_brM_in;
@@ -162,6 +171,7 @@ module pipe_reg_M(
 	assign dm2regM_out		= dm2regM;
 	assign mult_enM_out		= mult_enM;
 	assign pc_srcM_out		= pc_srcM;
+	assign we_regM_out		= we_regM;
 	
 endmodule
 
@@ -174,14 +184,16 @@ module pipe_reg_W(
 		input wire [31:0]	mult_hiW_in,
 		input wire [4:0]	rf_waW_in,
 		input wire 			dm2regW_in,
+		input wire			we_regW_in,
 		output wire [31:0]	alu_outW_out,
 		output wire [31:0]	rd_dmW_out,
 		output wire [31:0]	mult_loW_out,
 		output wire [31:0]	mult_hiW_out,
 		output wire [4:0]	rf_waW_out,
-		output wire 		dm2regW_out	
+		output wire 		dm2regW_out,
+		output wire			we_regW_out	
 	);
-	reg [31:0]	alu_outW, rd_dmW, mult_loW, mult_hiW;
+	reg [31:0]	alu_outW, rd_dmW, mult_loW, mult_hiW, we_regW;
 	reg [4:0]	rf_waW;
 	reg 		dm2regW;
 	always @ (posedge clk, posedge rst)
@@ -193,7 +205,8 @@ module pipe_reg_W(
 			mult_loW	<=	0;
 			mult_hiW 	<=	0;
 			rf_waW 		<=	0;
-			dm2regW 	<=	0;			
+			dm2regW 	<=	0;
+			we_regW		<=	0;			
 		end
 		else
 		begin
@@ -203,6 +216,7 @@ module pipe_reg_W(
 			mult_hiW 	<=	mult_hiW_in;
 			rf_waW 		<=	rf_waW_in;
 			dm2regW 	<=	dm2regW_in;
+			we_regW		<=	we_regW_in;
 		end
 	end
 	
@@ -212,5 +226,6 @@ module pipe_reg_W(
 	assign mult_hiW_out	= mult_hiW;
 	assign rf_waW_out	= rf_waW;
 	assign dm2regW_out	= dm2regW;
+	assign we_regW_out	= we_regW;
 	
 endmodule

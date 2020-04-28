@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Apr 26 23:56:45 2020
+# Process ID: 92724
+# Current directory: D:/Documents/School/CMPE 140/CMPE140Labs/AnkhbayarLab8/Assignment5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent92136 D:\Documents\School\CMPE 140\CMPE140Labs\AnkhbayarLab8\Assignment5\Assignment5.xpr
+# Log file: D:/Documents/School/CMPE 140/CMPE140Labs/AnkhbayarLab8/Assignment5/vivado.log
+# Journal file: D:/Documents/School/CMPE 140/CMPE140Labs/AnkhbayarLab8/Assignment5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Documents/School/CMPE 140/CMPE140Labs/AnkhbayarLab8/Assignment5/Assignment5.xpr}
+update_compile_order -fileset sources_1
+import_files -norecurse {{D:/Documents/School/CMPE 140/CMPE140Labs/AnkhbayarLab8/basys3_single_cycle_mips_validation/button_debouncer.v} {D:/Documents/School/CMPE 140/CMPE140Labs/AnkhbayarLab8/basys3_single_cycle_mips_validation/hex_to_7seg.v} {D:/Documents/School/CMPE 140/CMPE140Labs/AnkhbayarLab8/basys3_single_cycle_mips_validation/clk_gen.v} {D:/Documents/School/CMPE 140/CMPE140Labs/AnkhbayarLab8/basys3_single_cycle_mips_validation/led_mux.v} {D:/Documents/School/CMPE 140/CMPE140Labs/AnkhbayarLab8/basys3_single_cycle_mips_validation/mips_fpga.v}}
+update_compile_order -fileset sources_1
+import_files -norecurse {{D:/Documents/School/CMPE 140/CMPE140Labs/AnkhbayarLab8/lab5_processor_design_1/single_cycle_mips_source_initial/control_unit/maindec.v} {D:/Documents/School/CMPE 140/CMPE140Labs/AnkhbayarLab8/lab5_processor_design_1/single_cycle_mips_source_initial/datapath/signext.v} {D:/Documents/School/CMPE 140/CMPE140Labs/AnkhbayarLab8/lab5_processor_design_1/single_cycle_mips_source_initial/datapath/adder.v} {D:/Documents/School/CMPE 140/CMPE140Labs/AnkhbayarLab8/lab5_processor_design_1/single_cycle_mips_source_initial/datapath/dreg.v} {D:/Documents/School/CMPE 140/CMPE140Labs/AnkhbayarLab8/lab5_processor_design_1/single_cycle_mips_source_initial/memory/dmem.v} {D:/Documents/School/CMPE 140/CMPE140Labs/AnkhbayarLab8/lab5_processor_design_1/single_cycle_mips_source_initial/datapath/mux2.v} {D:/Documents/School/CMPE 140/CMPE140Labs/AnkhbayarLab8/lab5_processor_design_1/single_cycle_mips_source_initial/datapath/alu.v} {D:/Documents/School/CMPE 140/CMPE140Labs/AnkhbayarLab8/lab5_processor_design_1/single_cycle_mips_source_initial/control_unit/auxdec.v} {D:/Documents/School/CMPE 140/CMPE140Labs/AnkhbayarLab8/lab5_processor_design_1/single_cycle_mips_source_initial/memory/imem.v} {D:/Documents/School/CMPE 140/CMPE140Labs/AnkhbayarLab8/lab5_processor_design_1/single_cycle_mips_source_initial/control_unit/controlunit.v} {D:/Documents/School/CMPE 140/CMPE140Labs/AnkhbayarLab8/lab5_processor_design_1/single_cycle_mips_source_initial/mips/mips_top.v} {D:/Documents/School/CMPE 140/CMPE140Labs/AnkhbayarLab8/lab5_processor_design_1/single_cycle_mips_source_initial/datapath/datapath.v} {D:/Documents/School/CMPE 140/CMPE140Labs/AnkhbayarLab8/lab5_processor_design_1/single_cycle_mips_source_initial/datapath/regfile.v} {D:/Documents/School/CMPE 140/CMPE140Labs/AnkhbayarLab8/lab5_processor_design_1/single_cycle_mips_source_initial/mips/mips.v}}
+update_compile_order -fileset sources_1

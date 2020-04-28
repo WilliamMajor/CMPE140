@@ -65,7 +65,7 @@ begin
     tick_tock;
     if(done) 
     begin
-        idx = 30;
+        $finish;
 //        case(N)
 //            0: if(result != 1) errorCount = errorCount + 1;
 //            1: if(result != 1) errorCount = errorCount + 1;
