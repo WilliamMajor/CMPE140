@@ -1,17 +1,17 @@
 module maindec (
-		input [5:0] opcode, 
-		output branch,
-		output jump,
-		output [1:0] reg_dst,
-		output we_reg,
-		output alu_src, 
-		output we_dm,
-		output dm2reg,
+		input wire [5:0] opcode, 
+		output wire branch,
+		output wire jump,
+		output wire [1:0] reg_dst,
+		output wire we_reg,
+		output wire alu_src, 
+		output wire we_dm,
+		output wire dm2reg,
 		output [1:0] alu_op
 	);
-    reg [9:0] ctrl;
+    reg [9:0] ctrl = 10'b0;
     assign {branch, jump, reg_dst, we_reg, alu_src, we_dm, dm2reg, alu_op} = ctrl;
-    always @ (opcode)
+    always @ (posedge opcode)
     begin
         case (opcode)
             6'b00_0000: ctrl = 10'b0_0_01_1_0_0_0_11; // R-type
@@ -34,9 +34,9 @@ module auxdec (
 		output multi_en,
 		output jump_reg
 	);
-    reg [6:0] ctrl;
+    reg [6:0] ctrl = 7'b0;
     assign {alu_ctrl, multi_sel, multi_en, jump_reg} = ctrl;
-    always @ (alu_op, funct)
+    always @ (posedge alu_op, posedge funct)
     begin
         case (alu_op)
             2'b00: ctrl = 7'b010_01_0_0; // add

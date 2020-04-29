@@ -14,6 +14,7 @@ module mips(
     wire [1:0] mult_sel, reg_dst;
     wire [2:0] alu_ctrl;
     wire zero;
+    wire [5:0] opcodeE_out, functE_out;
     datapath dp (
     	.clk			(clk), 
 		.mult_en		(mult_en),
@@ -36,12 +37,14 @@ module mips(
 		.pc_current		(pc_current),
 		.alu_outM_out	(alu_outM_out),
 		.wd_dmM_out		(wd_dmM_out),
-		.rd3			(rd3)
+		.rd3			(rd3),
+		.opcodeE_out	(opcodeE_out),
+		.functE_out		(functE_out)
 	);
     controlunit cu (
     	.zero		(zero),
-    	.opcode		(instr[31:26]),
-    	.funct		(instr[5:0]),
+    	.opcode		(opcodeE_out),
+    	.funct		(functE_out),
     	.pc_src		(pc_src),
     	.jump		(jump),
     	.we_reg		(we_reg), 

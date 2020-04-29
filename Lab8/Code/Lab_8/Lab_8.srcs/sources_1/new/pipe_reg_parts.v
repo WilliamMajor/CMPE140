@@ -120,6 +120,7 @@ module pipe_reg_M(
 		input wire			mult_enM_in,
 		input wire			pc_srcM_in,
 		input wire			we_regM_in,
+		input wire			zeroM_in,
 		output wire [63:0]	multM_out,
 		output wire [31:0]	alu_outM_out,
 		output wire [31:0]	wd_dmM_out,
@@ -128,12 +129,13 @@ module pipe_reg_M(
 		output wire			dm2regM_out,
 		output wire			mult_enM_out,
 		output wire			pc_srcM_out,
-		output wire			we_regM_out
+		output wire			we_regM_out,
+		output wire			zeroM_out
 	);
 	reg [63:0] 	multM;
 	reg [31:0] 	alu_outM, wd_dmM, pc_plus_brM;
 	reg [4:0]	rf_waM;
-	reg	dm2regM, mult_enM, pc_srcM, we_regM;
+	reg	dm2regM, mult_enM, pc_srcM, we_regM, zeroM;
 	always @ (posedge clk, posedge rst)
 	begin
 		if(rst == 1)
@@ -145,6 +147,7 @@ module pipe_reg_M(
 			mult_enM 	<=	0;
 			pc_srcM		<= 	0;
 			we_regM		<=	0;
+			zeroM		<=	0;
 			rf_waM 		<=	0;
 			multM 		<=	0;
 			pc_plus_brM <=	0;
@@ -158,6 +161,7 @@ module pipe_reg_M(
 			mult_enM 	<=	mult_enM_in;
 			pc_srcM		<= 	pc_srcM_in;
 			we_regM		<=	we_regM_in;
+			zeroM		<= 	zeroM_in;
 			rf_waM 		<=	rf_waM_in;
 			multM 		<=	multM_in;
 			pc_plus_brM <=	pc_plus_brM_in;
@@ -172,6 +176,7 @@ module pipe_reg_M(
 	assign mult_enM_out		= mult_enM;
 	assign pc_srcM_out		= pc_srcM;
 	assign we_regM_out		= we_regM;
+	assign zeroM_out		= zeroM;
 	
 endmodule
 

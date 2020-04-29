@@ -1,13 +1,13 @@
 module maindec (
-		input [5:0] opcode, 
-		output branch,
-		output jump,
-		output [1:0] reg_dst,
-		output we_reg,
-		output alu_src, 
-		output we_dm,
-		output dm2reg,
-		output [1:0] alu_op
+		input wire [5:0] opcode, 
+		output wire branch,
+		output wire jump,
+		output wire [1:0] reg_dst,
+		output wire we_reg,
+		output wire alu_src, 
+		output wire we_dm,
+		output wire dm2reg,
+		output wire [1:0] alu_op
 	);
     reg [9:0] ctrl;
     assign {branch, jump, reg_dst, we_reg, alu_src, we_dm, dm2reg, alu_op} = ctrl;
@@ -27,22 +27,22 @@ module maindec (
 endmodule
 
 module auxdec (
-		input [1:0] alu_op,
-		input [5:0] funct,
-		output [2:0] alu_ctrl,
-		output [1:0] multi_sel,
-		output multi_en,
-		output jump_reg
+		input wire [1:0] alu_op,
+		input wire [5:0] funct,
+		output wire [2:0] alu_ctrl,
+		output wire [1:0] multi_sel,
+		output wire multi_en,
+		output wire jump_reg
 	);
-    reg [6:0] ctrl;
+    reg [6:0] ctrl = 0;
     assign {alu_ctrl, multi_sel, multi_en, jump_reg} = ctrl;
-    always @ (alu_op, funct)
+    always @ (alu_op)
     begin
         case (alu_op)
             2'b00: ctrl = 7'b010_01_0_0; // add
             2'b01: ctrl = 7'b110_01_0_0; // sub
             2'b10: ctrl = 7'b000_00_0_0; // jal
-            default: case (funct)
+            default: begin case (funct)
                 6'b10_0100: ctrl = 7'b000_01_0_0; // AND
                 6'b10_0101: ctrl = 7'b001_01_0_0; // OR
                 6'b10_0000: ctrl = 7'b010_01_0_0; // ADD
@@ -54,6 +54,7 @@ module auxdec (
                 6'b00_1000: ctrl = 7'b000_01_0_1; // JR
                 default:    ctrl = 7'bxxx_xx_x_x;
             endcase
+            end
         endcase
     end
 endmodule

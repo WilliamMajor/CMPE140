@@ -3,40 +3,43 @@ Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
 Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 28cfd657fd3b46c69ef4f73ad7b30efd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_mips_top_behav xil_defaultlib.tb_mips_top xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'c' [D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/datapath.v:194]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'd' [D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/datapath.v:195]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'c' [D:/Documents/School/CMPE 140/CMPE140Labs/Lab8Extra/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/datapath.v:223]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'd' [D:/Documents/School/CMPE 140/CMPE140Labs/Lab8Extra/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/datapath.v:224]
 Completed static elaboration
 Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/mips_top.v" Line 1. Module mips_top doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/mips.v" Line 1. Module mips doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/datapath.v" Line 1. Module datapath doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/dp_parts.v" Line 92. Module dreg doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/dp_parts.v" Line 57. Module adder doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/dp_parts.v" Line 57. Module adder doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/dp_parts.v" Line 1. Module mux2(wide=32) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/dp_parts.v" Line 1. Module mux2(wide=32) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/dp_parts.v" Line 1. Module mux2(wide=32) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/dp_parts.v" Line 10. Module mux4(wide=5) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/dp_parts.v" Line 109. Module regfile doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/dp_parts.v" Line 65. Module signext doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/dp_parts.v" Line 1. Module mux2(wide=32) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/dp_parts.v" Line 72. Module alu doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/dp_parts.v" Line 1. Module mux2(wide=32) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/dp_parts.v" Line 49. Module mult doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/dp_parts.v" Line 31. Module dreg2 doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/dp_parts.v" Line 31. Module dreg2 doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/dp_parts.v" Line 10. Module mux4(wide=32) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/controlunit.v" Line 1. Module controlunit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/cu_parts.v" Line 1. Module maindec doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/cu_parts.v" Line 29. Module auxdec doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/mem_parts.v" Line 1. Module imem doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/mem_parts.v" Line 12. Module dmem doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8Extra/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/mips_top.v" Line 1. Module mips_top doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8Extra/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/mips.v" Line 1. Module mips doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8Extra/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/datapath.v" Line 1. Module datapath doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8Extra/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/dp_parts.v" Line 92. Module dreg doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8Extra/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/dp_parts.v" Line 57. Module adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8Extra/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/dp_parts.v" Line 57. Module adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8Extra/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/dp_parts.v" Line 1. Module mux2(wide=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8Extra/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/dp_parts.v" Line 1. Module mux2(wide=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8Extra/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/dp_parts.v" Line 1. Module mux2(wide=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8Extra/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/dp_parts.v" Line 10. Module mux4(wide=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8Extra/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/dp_parts.v" Line 10. Module mux4(wide=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8Extra/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/dp_parts.v" Line 10. Module mux4(wide=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8Extra/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/dp_parts.v" Line 109. Module regfile doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8Extra/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/dp_parts.v" Line 65. Module signext doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8Extra/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/dp_parts.v" Line 1. Module mux2(wide=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8Extra/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/dp_parts.v" Line 72. Module alu doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8Extra/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/dp_parts.v" Line 1. Module mux2(wide=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8Extra/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/dp_parts.v" Line 49. Module mult doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8Extra/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/dp_parts.v" Line 31. Module dreg2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8Extra/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/dp_parts.v" Line 31. Module dreg2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8Extra/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/dp_parts.v" Line 10. Module mux4(wide=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8Extra/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/controlunit.v" Line 1. Module controlunit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8Extra/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/cu_parts.v" Line 1. Module maindec doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8Extra/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/cu_parts.v" Line 29. Module auxdec doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8Extra/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/mem_parts.v" Line 1. Module imem doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/School/CMPE 140/CMPE140Labs/Lab8Extra/Code/Lab_8/Lab_8.srcs/sources_1/imports/Lab_5_Stuff/mem_parts.v" Line 12. Module dmem doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.dreg
 Compiling module xil_defaultlib.adder
 Compiling module xil_defaultlib.mux2(wide=32)
 Compiling module xil_defaultlib.pipeline_control
+Compiling module xil_defaultlib.mux4(wide=32)
 Compiling module xil_defaultlib.pipe_reg_D
 Compiling module xil_defaultlib.pipe_reg_E
 Compiling module xil_defaultlib.pipe_reg_M
@@ -47,7 +50,6 @@ Compiling module xil_defaultlib.signext
 Compiling module xil_defaultlib.alu
 Compiling module xil_defaultlib.mult
 Compiling module xil_defaultlib.dreg2
-Compiling module xil_defaultlib.mux4(wide=32)
 Compiling module xil_defaultlib.datapath
 Compiling module xil_defaultlib.maindec
 Compiling module xil_defaultlib.auxdec

@@ -1,8 +1,7 @@
 module controlunit(
-		input zero,
 		input [5:0] opcode,
 		input [5:0] funct, 
-		output pc_src,
+		output branch,
 		output jump,
 		output we_reg, 
 		output alu_src, 
@@ -15,7 +14,6 @@ module controlunit(
 		output [2:0] alu_ctrl
 	);
     wire [1:0] alu_op;
-    wire branch;
     
     maindec md (
     	.opcode		(opcode),
@@ -38,6 +36,5 @@ module controlunit(
     	.jump_reg	(jump_reg)
 	);
     
-    assign pc_src = branch & zero;
     
 endmodule

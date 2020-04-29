@@ -31,7 +31,7 @@
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSAVendor" Val="xilinx"/>
     <Option Name="DSANumComputeUnits" Val="60"/>
-    <Option Name="WTXSimLaunchSim" Val="63"/>
+    <Option Name="WTXSimLaunchSim" Val="232"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -133,6 +133,22 @@
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../Lab7/memfile.dat"/>
           <Attr Name="ImportTime" Val="1587091702"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Lab8/test.dat">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../test.dat"/>
+          <Attr Name="ImportTime" Val="1588136393"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Lab8/test2.dat">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../test2.dat"/>
+          <Attr Name="ImportTime" Val="1588142172"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>

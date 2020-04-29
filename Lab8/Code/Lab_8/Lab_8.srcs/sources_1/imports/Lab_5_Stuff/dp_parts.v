@@ -1,3 +1,19 @@
+module mux2special #(parameter wide = 8)(
+		input wire				rst,
+		input wire				sel,
+		input wire [wide-1:0] 	a,
+		input wire [wide-1:0]	b,
+		output wire [wide-1:0] 	y
+		);
+		reg selx;
+		always @ (posedge rst)
+		begin
+			if(rst == 1) selx = 0;
+			else selx = sel;
+		end
+    assign y = (selx) ? b : a;
+endmodule
+
 module mux2 #(parameter wide = 8)(
 		input wire				sel,
 		input wire [wide-1:0] 	a,
@@ -27,6 +43,13 @@ module mux4 #(parameter wide = 8)(
 	end
 endmodule
 
+module andgate (
+		input wire a,
+		input wire b,
+		output wire y
+	);
+	assign y = (a && b);
+endmodule
 
 module dreg2 (
 		input wire			clk,

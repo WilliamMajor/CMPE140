@@ -1,9 +1,9 @@
 module datapath(
 		input wire clk,
+		input wire branch,
 		input wire mult_en,
 		input wire jump_reg,
 		input wire rst,
-		input wire pc_src,
 		input wire jump,
 		input wire we_reg,
 		input wire alu_src,
@@ -15,17 +15,19 @@ module datapath(
 		input wire [4:0] ra3,
 		input wire [31:0] instr,
 		input wire [31:0] rd_dm,
-		output wire zero,
 		output wire we_dmE_out,
 		output wire [31:0] pc_current,
 		output wire [31:0] alu_outM_out,
 		output wire [31:0] wd_dmM_out,
-		output wire	[31:0] rd3
+		output wire	[31:0] rd3,
+		output wire	[5:0] opcode,
+		output wire	[5:0] funct
 	);
     wire [4:0]  rf_wa;
     wire [31:0] pc_plus4, pc_pre, pc_next, sext_imm, ba, bta, jta, alu_pa, alu_pb, wd_rf;
     wire [63:0] mult_out;
     wire [31:0] lo_out, hi_out, mult_mux_out, jr_mux_out, alu_out;
+    wire 		zero, pc_src;
     
     //Pipeline regs//
     wire [63:0] multM_out;
@@ -39,12 +41,15 @@ module datapath(
     wire [1:0] reg_dstE_out;
     
     wire		alu_srcE_out, dm2regE_out, mult_enE_out, pc_srcE_out, we_regE_out;
-    wire		dm2regM_out, mult_enM_out, dm2regW_out, pc_srcM_out, we_regM_out;
+    wire		dm2regM_out, mult_enM_out, dm2regW_out, pc_srcM_out, we_regM_out, zeroM_out;
     wire		we_regW_out;
     
     
+    
     assign ba = {seE_out[29:0], 2'b00};
-    assign jta = {pc_plus4[31:28], instr[25:0], 2'b00};
+    assign opcode = instrD_out[31:26];
+    assign funct = instrD_out[5:0];
+    assign jta = {pc_plus4[31:28], instrD_out[25:0], 2'b00};
     
     // --- PC Logic --- //
     dreg pc_reg (
@@ -67,7 +72,7 @@ module datapath(
 	);
 	
     mux2 #(32) pc_src_mux (
-    	.sel	(pc_srcM_out),
+    	.sel	(pc_src),
     	.a		(pc_plus4),
     	.b		(bta),
     	.y		(pc_pre)
@@ -79,11 +84,18 @@ module datapath(
     	.b		(jta),
     	.y		(pc_next)
 	);
-    mux2 #(32) pc_jreg_mux (
+    mux2special #(32) pc_jreg_mux (
+    	.rst	(rst),
     	.sel	(jump_reg),
     	.a		(pc_next),
     	.b		(alu_pa),
     	.y		(jr_mux_out)
+	);
+	
+	andgate andgate (
+		.a		(branch),
+		.b		(zeroM_out),
+		.y		(pc_src)
 	);
     
     // --- Pipeline Logic -- //
@@ -137,6 +149,7 @@ module datapath(
 		.mult_enM_in		(mult_enE_out),
 		.pc_srcM_in			(pc_srcE_out),
 		.we_regM_in			(we_regE_out),
+		.zeroM_in			(zero),
 		.multM_out			(multM_out),
 		.alu_outM_out		(alu_outM_out),
 		.wd_dmM_out			(wd_dmM_out),
@@ -145,7 +158,8 @@ module datapath(
 		.dm2regM_out		(dm2regM_out),
 		.mult_enM_out		(mult_enM_out),
 		.pc_srcM_out		(pc_srcM_out),
-		.we_regM_out		(we_regM_out)
+		.we_regM_out		(we_regM_out),
+		.zeroM_out			(zeroM_out)
 	);
     
     pipe_reg_W pipe_reg_W (

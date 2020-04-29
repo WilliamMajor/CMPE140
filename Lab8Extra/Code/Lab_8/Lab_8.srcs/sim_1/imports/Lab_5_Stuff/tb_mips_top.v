@@ -19,10 +19,10 @@ module tb_mips_top;
     
 
     task tick; begin #5 clk = 1; #5 clk = 0; end endtask
-    task rest; begin #5 rst = 1; #5 rst = 0; end endtask
+    task rest; begin #5 rst = 1; clk = 1; #5 rst = 0; clk = 0; end endtask
     
     initial begin
-        rest;
+		rest;
         while(pc_current != 32'h38)
         begin
             tick;
