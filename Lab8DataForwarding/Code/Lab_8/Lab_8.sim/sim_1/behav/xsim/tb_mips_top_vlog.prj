@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Lab_8.srcs/sources_1/imports/Lab_5_Stuff/controlunit.v" \
+"../../../../Lab_8.srcs/sources_1/imports/Lab_5_Stuff/cu_parts.v" \
+"../../../../Lab_8.srcs/sources_1/imports/Lab_5_Stuff/datapath.v" \
+"../../../../Lab_8.srcs/sources_1/imports/Lab_5_Stuff/dp_parts.v" \
+"../../../../Lab_8.srcs/sources_1/new/forwarding_control.v" \
+"../../../../Lab_8.srcs/sources_1/imports/Lab_5_Stuff/mem_parts.v" \
+"../../../../Lab_8.srcs/sources_1/imports/Lab_5_Stuff/mips.v" \
+"../../../../Lab_8.srcs/sources_1/imports/Lab_5_Stuff/mips_top.v" \
+"../../../../Lab_8.srcs/sources_1/new/pipe_reg_parts.v" \
+"../../../../Lab_8.srcs/sim_1/imports/Lab_5_Stuff/tb_mips_top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,77 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Apr 29 13:50:20 2020
+# Process ID: 13984
+# Current directory: D:/Documents/School/CMPE 140/CMPE140Labs/Lab8DataForwarding/Code/Lab_8
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5772 D:\Documents\School\CMPE 140\CMPE140Labs\Lab8DataForwarding\Code\Lab_8\Lab_8.xpr
+# Log file: D:/Documents/School/CMPE 140/CMPE140Labs/Lab8DataForwarding/Code/Lab_8/vivado.log
+# Journal file: D:/Documents/School/CMPE 140/CMPE140Labs/Lab8DataForwarding/Code/Lab_8\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Documents/School/CMPE 140/CMPE140Labs/Lab8DataForwarding/Code/Lab_8/Lab_8.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+launch_simulation
+source tb_mips_top.tcl
+close [ open {D:/Documents/School/CMPE 140/CMPE140Labs/Lab8DataForwarding/Code/Lab_8/Lab_8.srcs/sources_1/new/forwarding_control.v} w ]
+add_files {{D:/Documents/School/CMPE 140/CMPE140Labs/Lab8DataForwarding/Code/Lab_8/Lab_8.srcs/sources_1/new/forwarding_control.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/tb_mips_top/DUT/mips/dp/pipe_reg_W/alu_outW}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+import_files -norecurse {{D:/Documents/School/CMPE 140/CMPE140Labs/Lab8DataForwarding/test3.dat}}
+relaunch_sim
+close [ open {D:/Documents/School/CMPE 140/CMPE140Labs/Lab8DataForwarding/Code/Lab_8/Lab_8.srcs/sources_1/new/hazard_control.v} w ]
+add_files {{D:/Documents/School/CMPE 140/CMPE140Labs/Lab8DataForwarding/Code/Lab_8/Lab_8.srcs/sources_1/new/hazard_control.v}}
+update_compile_order -fileset sources_1
+relaunch_sim
+import_files -norecurse {{D:/Documents/School/CMPE 140/CMPE140Labs/Lab8DataForwarding/test4.dat}}
+relaunch_sim
+run 10 us
+export_ip_user_files -of_objects  [get_files {{D:/Documents/School/CMPE 140/CMPE140Labs/Lab8DataForwarding/Code/Lab_8/Lab_8.srcs/sources_1/new/hazard_control.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/Documents/School/CMPE 140/CMPE140Labs/Lab8DataForwarding/Code/Lab_8/Lab_8.srcs/sources_1/new/hazard_control.v}}
+import_files -norecurse {{D:/Documents/School/CMPE 140/CMPE140Labs/Lab8DataForwarding/test5.dat}}
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
